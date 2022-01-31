@@ -4,8 +4,6 @@ description: Returns a collection of historical gas information
 
 # eth\_feeHistory
 
-Returns a collection of historical gas information from which you can decide what to submit as your `maxFeePerGas` and/or `maxPriorityFeePerGas`. This method was introduced with [EIP 1559](https://blog.alchemy.com/blog/eip-1559).
-
 **Parameters**
 
 * `BLOCKCOUNT` - Number of blocks in the requested range. Between 1 and 1024 blocks can be requested in a single query. Less than requested may be returned if not all blocks are available.
@@ -28,16 +26,17 @@ Request
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://eth-rinkeby.alchemyapi.io/v2/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/rinkeby \
 -X POST \
 -H "Content-Type: application/json" \
+-H "Authorization: Bearer privateKeyPart.publicKeyPart"
 -d '{"jsonrpc":"2.0","method":"eth_feeHistory","params":[4, "latest", [25, 75]],"id":1}'
 ```
 {% endtab %}
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {

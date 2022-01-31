@@ -6,8 +6,6 @@ description: >-
 
 # eth\_maxPriorityFeePerGas
 
-Generally you will use the value returned from this method to set the `maxFeePerGas` in a subsequent transaction that you are submitting. This method was introduced with [EIP 1559](https://blog.alchemy.com/blog/eip-1559).
-
 {% hint style="danger" %}
 **NOTE: **This method is not currently supported on Kovan
 {% endhint %}
@@ -26,17 +24,19 @@ Request
 
 {% tabs %}
 {% tab title="Curl" %}
+
 ```bash
-curl https://eth-rinkeby.alchemyapi.io/v2/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/rinkeby \
 -X POST \
 -H "Content-Type: application/json" \
+-H "Authorization: Bearer privateKeyPart.publicKeyPart"
 -d '{"jsonrpc":"2.0","method":"eth_maxPriorityFeePerGas","params":[],"id":1}'
 ```
 {% endtab %}
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {

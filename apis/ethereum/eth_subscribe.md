@@ -26,7 +26,7 @@ Request
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","id": 1, "method": "eth_subscribe", "params": ["newHeads", {"includeTransactions": true}]}'
@@ -35,7 +35,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {
@@ -77,7 +77,7 @@ Request
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","id": 1, "method": "eth_subscribe", "params": ["newHeads"]}'
@@ -86,7 +86,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {
@@ -151,7 +151,7 @@ Request
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","id": 1, "method": "eth_subscribe", "params": ["logs", {"address": "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd", "topics": ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}'
@@ -160,7 +160,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {
@@ -220,7 +220,7 @@ Request
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","id": 2, "method": "eth_subscribe", "params": ["newPendingTransactions"]}'
@@ -229,7 +229,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {
@@ -275,7 +275,7 @@ Request
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","id": 1, "method": "eth_subscribe", "params": ["syncing"]}'
@@ -284,7 +284,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {

@@ -24,7 +24,7 @@ Request
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0x8243343df08b9751f5ca0c5f8c9c0460d8a9b6351066fae0acbd4d3e776de8bb"],"id":0}'
@@ -33,7 +33,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {

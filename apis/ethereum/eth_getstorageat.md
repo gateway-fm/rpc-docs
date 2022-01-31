@@ -38,7 +38,7 @@ Retrieving the value of `pos0` is straight forward:
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}'
@@ -47,7 +47,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {
@@ -97,7 +97,7 @@ Now to fetch the storage:
 {% tabs %}
 {% tab title="Curl" %}
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
+curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}'
@@ -106,7 +106,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key \
 
 {% tab title="Postman" %}
 ```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet/your-api-key
+URL: https://rpc.gateway.fm/v1/ethereum/mainnet
 RequestType: POST
 Body: 
 {
