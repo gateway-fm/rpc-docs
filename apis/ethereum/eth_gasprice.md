@@ -4,10 +4,6 @@ description: Returns the current price per gas in wei.
 
 # eth_gasPrice
 
-{% hint style="info" %}
-If you are curious about the difference in gas price between this method and the [eth gas station](https://ethgasstation.info), check out this [GitHub issue](https://github.com/ethereum/go-ethereum/issues/15825).
-{% endhint %}
-
 ### Parameters
 
 none
@@ -16,41 +12,24 @@ none
 
 `QUANTITY` - integer of the current gas price in wei.
 
-**Example**
+### **Example**
 
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":0}'
+-d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":71}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_gasPrice",
-    "params":[],
-    "id":0
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
 ```javascript
 {
-  "jsonrpc": "2.0",
-  "id": 0,
-  "result": "0x98bca5a00"
+    "jsonrpc": "2.0",
+    "id": 71,
+    "result": "0x20688d341a"
 }
 ```

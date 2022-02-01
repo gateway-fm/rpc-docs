@@ -28,6 +28,7 @@ Request
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/rinkeby \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer privateKeyPart.publicKeyPart"
 -d '{"jsonrpc":"2.0","method":"eth_feeHistory","params":[4, "latest", [25, 75]],"id":1}'

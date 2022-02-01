@@ -1,7 +1,7 @@
 ---
-description: >-
-  Returns the information about a transaction requested by transaction hash. In
-  the response object, `blockHash`, `blockNumber`, and `transactionIndex` are
+description:
+  Returns the information about a transaction requested by transaction hash. 
+  In the response object, `blockHash`, `blockNumber`, and `transactionIndex` are
   `null` when the transaction is pending.
 ---
 
@@ -13,7 +13,7 @@ description: >-
 
 ```javascript
 params: [
-    "0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"
+    "0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
 ]
 ```
 
@@ -21,17 +21,29 @@ params: [
 
 `Object` - A transaction object, or null when no transaction was found:
 
-* `blockHash`: `DATA`, 32 Bytes - hash of the block where this transaction was in. null when its pending.
-* `blockNumber`: `QUANTITY` - block number where this transaction was in. null when it's pending.
-* `from`: `DATA`, 20 Bytes - address of the sender.
-* `gas`: `QUANTITY` - gas provided by the sender.
-* `gasPrice`: `QUANTITY` - gas price provided by the sender in Wei.
-* `hash`: `DATA`, 32 Bytes - hash of the transaction.
-* `input`: `DATA` - the data send along with the transaction.
-* `nonce`: `QUANTITY` - the number of transactions made by the sender prior to this one.
-* `to`: `DATA`, 20 Bytes - address of the receiver. null when it's a contract creation transaction.
-* `transactionIndex`: `QUANTITY` - integer of the transactions index position in the block. null when its pending.
-* `value`: `QUANTITY` - value transferred in Wei.
+`hash`: `DATA`, 32 Bytes - hash of the transaction.
+
+`nonce`: `QUANTITY` - the number of transactions made by the sender prior to this one.
+
+`blockHash`: `DATA`, 32 Bytes - hash of the block where this transaction was in. null when its pending.
+
+`blockNumber`: `QUANTITY` - block number where this transaction was in. null when its pending.
+
+`transactionIndex`: `QUANTITY` - integer of the transactions index position in the block. null when its pending.
+
+`from`: `DATA`, 20 Bytes - address of the sender.
+
+`to`: `DATA`, 20 Bytes - address of the receiver. null when its a contract creation transaction.
+
+`value`: `QUANTITY` - value transferred in Wei.
+
+`gasPrice`: `QUANTITY` - gas price provided by the sender in Wei.
+
+`gas`: `QUANTITY` - gas provided by the sender.
+
+`input`: `DATA` - the data send along with the transaction.
+
+???
 * `v`: `QUANTITY` - ECDSA recovery id
 * `r`: `DATA`, 32 Bytes - ECDSA signature r
 * `s`: `DATA`, 32 Bytes - ECDSA signature s
@@ -44,25 +56,10 @@ Request
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -d'{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":0}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_getTransactionByHash",
-    "params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],
-    "id":0
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 

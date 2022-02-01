@@ -1,5 +1,6 @@
 ---
 description: Returns true if client is actively listening for network connections.
+
 ---
 
 # net_listening
@@ -15,36 +16,19 @@ none
 #### ****[**Example**]
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"net_listening","params":[],"id":67}'
+-d '{ "id": 89, "jsonrpc": "2.0", "method": "net_listening", "params": []}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"net_listening",
-    "params":[],
-    "id":67
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
 ```javascript
 {
-  "id":67,
+  "id":89,
   "jsonrpc":"2.0",
   "result":true
 }

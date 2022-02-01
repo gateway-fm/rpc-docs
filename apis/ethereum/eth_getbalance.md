@@ -23,38 +23,22 @@ params: [
 
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0xc94770007dda54cF92009BFF0dE90c06F603a09f", "latest"],"id":0}'
+-d '{ "id": 89, "jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0bE","0x14036008"]}'
 ```
-{% endtab %}
 
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_getBalance",
-    "params":["0xc94770007dda54cF92009BFF0dE90c06F603a09f", "latest"],
-    "id":0
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
 ```javascript
 {
   "jsonrpc": "2.0",
-  "id": 0,
-  "result": "0x7c2562030800"
+  "id": 89,
+  "result": "0x1f250f59c12e1b2e"
 }
 ```
 

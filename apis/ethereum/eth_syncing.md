@@ -1,14 +1,11 @@
 ---
-description: >-
-  Returns an object with data about the sync status or falseif the node is fully
-  synced.
+description: 
+  Returns an object with data about the sync status or false.
 ---
 
 # eth_syncing
 
-{% hint style="success" %}
-**Note**: Your response from `eth_syncing` will likely return false because Gateway only supports nodes in production that are completed synced. 
-{% endhint %}
+**Note**: Your response from `eth_syncing` will likely return false because Gateway only supports nodes in production that are completed synced.
 
 ### **Parameters**
 
@@ -22,40 +19,23 @@ none
 * `currentBlock`: `QUANTITY` - The current block, same as eth_blockNumber
 * `highestBlock`: `QUANTITY` - The estimated highest block
 
-### ****[**Example**]
+### **Example**
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+-d '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":71}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_syncing",
-    "params":[],
-    "id":1
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Response
 
 ```javascript
 {
-  "id":1,
-  "jsonrpc": "2.0",
-  "result": false
+    "jsonrpc": "2.0",
+    "id": 71,
+    "result": false
 }
 ```

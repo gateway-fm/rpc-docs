@@ -1,12 +1,9 @@
 ---
 description: Returns a list of addresses owned by client.
+The method has been deprecated
 ---
-
+>**The method has been deprecated**
 # eth_accounts
-
-{% hint style="warning" %}
-Since Gateway does not store keys, this will always return empty.
-{% endhint %}
 
 ### **Parameters**
 
@@ -20,37 +17,24 @@ none
 
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+-d '{ "id": 89, "jsonrpc": "2.0", "method": "eth_accounts", "params": []}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_accounts",
-    "params":[],
-    "id":1
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
 ```javascript
 {
-  "id":1,
-  "jsonrpc": "2.0",
-  "result": []
+    "jsonrpc": "2.0",
+    "id": 89,
+    "result": null,
+    "error": {
+        "code": -32000,
+        "message": "the method has been deprecated: eth_accounts"
+    }
 }
 ```

@@ -1,8 +1,8 @@
 ---
-description: Returns the current client version.
+description: Returns number of peers currently connected to the client.
 ---
 
-# web3\_clientVersion
+# net_peerCount
 
 ### **Parameters**
 
@@ -10,7 +10,7 @@ none
 
 ### **Returns**
 
-`String` - The current client version
+`QUANTITY` - integer of the number of connected peers.
 
 ### **Example**
 Request
@@ -20,7 +20,7 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":71}'
+-d '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":71}'
 ```
 
 
@@ -30,6 +30,6 @@ Result
 {
     "jsonrpc": "2.0",
     "id": 71,
-    "result": "erigon/2022.01.3/linux-amd64/go1.17.6"
+    "result": "0x21"
 }
 ```

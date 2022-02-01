@@ -12,47 +12,29 @@ none
 
 `String` - The current network id.
 
-* `"1"`: Ethereum Mainnet
-* `"2"`: Morden Testnet (deprecated)
-* `"3"`: Ropsten Testnet
-* `"4"`: Rinkeby Testnet
-* `"42"`: Kovan Testnet
+`"1"`: Ethereum Mainnet
+`"2"`: Morden Testnet (deprecated)
+`"3"`: Ropsten Testnet
+`"4"`: Rinkeby Testnet
+`"42"`: Kovan Testnet
 
-#### ****[**Example**]
+#### **Example**
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"net_version","params":[],"id":67}'
+-d '{ "id": 89, "jsonrpc": "2.0", "method": "net_version", "params": []}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"net_version",
-    "params":[],
-    "id":67
-}
-```
-{% endtab %}
-{% endtabs %}
-
 Result
 
 ```javascript
 {
-  "id":67,
-  "jsonrpc": "2.0",
-  "result": "3"
+    "jsonrpc":"2.0",
+    "id":89,
+    "result":"1"
 }
 ```
 

@@ -35,30 +35,13 @@ contract Storage {
 
 Retrieving the value of `pos0` is straight forward:
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_getStorageAt",
-    "params":["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"],
-    "id":1
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
@@ -93,39 +76,20 @@ undefined
 
 Now to fetch the storage:
 
-
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
+-H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}'
+-d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0bE","0x0",14036168 ],"id": 89}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_getStorageAt",
-    "params":["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"],
-    "id":1
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
 ```javascript
 {
     "jsonrpc":"2.0",
-    "id":1,
-    "result":"0x000000000000000000000000000000000000000000000000000000000000162e"
+    "id":89,
+    "result":"0x0000000000000000000000000000000000000000000000000000000000000000"
 }
 ```
-
