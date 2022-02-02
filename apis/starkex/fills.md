@@ -1,8 +1,7 @@
-
 ---
 description: This method is used to get the history of fills (executed trades) for the authenticated user
 ---
-#Fills history
+# Fills history
 
 ### **Parameters**
 none

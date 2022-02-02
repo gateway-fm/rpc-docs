@@ -1,8 +1,7 @@
-
 ---
 description: Returns paginated list of transfers, also supports csv requests
 ---
-#Transfers History
+# Transfers History
 
 ### **Parameters**
 none
