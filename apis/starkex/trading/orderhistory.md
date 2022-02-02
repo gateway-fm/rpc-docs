@@ -67,7 +67,7 @@ curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/orderHistory \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \  
--d '{"symbol":"ETH:USD"}'
+-d '{"symbol":"ETH:USDT"}'
 ```
 
 
