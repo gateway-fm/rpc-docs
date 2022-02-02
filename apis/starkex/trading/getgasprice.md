@@ -33,7 +33,6 @@ Request
 curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/getGasPrice \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
--H "GFM-StarkEx-Authorization: <EcRecover_value>" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" 
 ```
