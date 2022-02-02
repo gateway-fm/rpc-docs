@@ -29,7 +29,7 @@ curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/w/cancelOrder \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \  
--d '{"orderId": "d7c8b9", "cid": "some-order-2083236893"}'
+-d '{"orderId": "d7c8b9"}'
 ```
 
 
