@@ -53,15 +53,22 @@ curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/getDeposits \
 Result
 
 ```javascript
-{
-    "ethAddress": "0x341E46a49F15785373edE443Df0220DEa6a41Bbc",
-    "starkKey": "77a3b314db07c45076d11f62b6f9e748a39790441823307743cf00d6597ea43",
-    "starkVaultId": 123,
-    "starkTokenId": "0x7",
-    "token": "USDT",
-    "amount": 1000,
-    "createdAt": "2020-01-29T14:02:08.477Z",
-    "isPostedOffchain": false,
-    "isConfirmedOnChain": true
-  }
+[
+    {
+        "_id": "5qeXDA5Wwny",
+        "pending": false,
+        "token": "ETH",
+        "amount": "1200000",
+        "createdAt": "2021-12-23T14:03:59.870Z",
+        "status": "ready"
+    },
+    {
+        "_id": "EQxxFgA54f3",
+        "pending": false,
+        "token": "ETH",
+        "amount": "2000000",
+        "createdAt": "2021-12-23T14:02:45.020Z",
+        "status": "ready"
+    }
+]
 ```
