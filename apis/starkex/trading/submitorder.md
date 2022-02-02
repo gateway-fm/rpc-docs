@@ -1,8 +1,7 @@
-
 ---
 description: This authenticated endpoint is used to submit an order.
 ---
-# **Submit Order**
+# Submit Order
 
 ### **Parameters**
 `cid` - string

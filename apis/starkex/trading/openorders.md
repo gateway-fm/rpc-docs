@@ -1,8 +1,7 @@
-
 ---
 description: This endpoints allows to retrieve details on all open orders.
 ---
-# **All Orders**
+# All Orders
 
 ### **Parameters**
 `symbol` - string

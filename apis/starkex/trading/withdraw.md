@@ -1,8 +1,6 @@
-
 ---
-description: Submit a request for a new withdrawal.
----
-# **New Withdrawal**
+description: Submit a request for a new withdrawal.---
+# New Withdrawal
 
 ### **Parameters**
 

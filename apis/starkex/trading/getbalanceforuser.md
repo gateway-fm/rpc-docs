@@ -1,8 +1,7 @@
-
 ---
 description: This is used to retrieve the total and active balances of a user per token. Active balance is the balance that is currently available. Total balance (specified as balance) is the sum of all the balances including those locked for trading.
 ---
-# **Get User Balances**
+# Get User Balances
 
 ### **Parameters**
 `token` - string

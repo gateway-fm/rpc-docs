@@ -1,8 +1,7 @@
-
 ---
 description: Return current fee rate for a given address. This rate is dependent on the trading volume of the user.
 ---
-# **Get Fee Rate**
+# Get Fee Rate
 
 ### **Parameters**
 

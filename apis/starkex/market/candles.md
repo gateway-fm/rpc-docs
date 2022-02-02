@@ -2,7 +2,7 @@
 description: The Candles endpoint provides OCHL (Open, Close, High, Low) and volume data for the specified funding currency or trading pair. The endpoint returns the last 100 candles by default, but a limit and a start and/or end timestamp can be specified.
 ---
 
-# **Candles**
+# Candles
 
 ### **Parameters**
 

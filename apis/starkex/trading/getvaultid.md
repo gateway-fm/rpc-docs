@@ -1,8 +1,7 @@
-
 ---
 description: An authenticated endpoint used to retrieve a vaultId for given token.
 ---
-# **Get Vault Id**
+# Get Vault Id
 
 ### **Parameters**
 `token` - string

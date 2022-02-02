@@ -1,8 +1,7 @@
-
 ---
 description: This is endpoint is used to retrieve the details for a specific order using the order ID.
 ---
-# **Order**
+# Order
 
 ### **Parameters**
 `orderId` - string

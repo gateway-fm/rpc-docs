@@ -1,8 +1,7 @@
-
 ---
 description: An authenticated endpoint used to retrieve a list of user's past withdrawals. This includes ready, completed, as well as cancelled withdrawals. The limit of withdrawals returned is 1000.
 ---
-# **Withdrawal History**
+# Withdrawal History
 
 ### **Parameters**
 

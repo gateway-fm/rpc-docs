@@ -2,7 +2,7 @@
 description: Request information regarding all recently completed trades for a given market pair.
 ---
 
-# **Trades History**
+# Trades History
 
 ### **Parameters**
 

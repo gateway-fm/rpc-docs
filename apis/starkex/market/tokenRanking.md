@@ -2,7 +2,7 @@
 description: This returns a user ranking by trading volume for a chosen token. If the parameters startDate and endDate are provided, the ranking includes only trading volume within that window of time. All volumes are quoted in ETH.
 ---
 
-# **Volume ranking by token**
+# Volume ranking by token
 
 ### **Parameters**
 

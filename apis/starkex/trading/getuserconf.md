@@ -1,9 +1,8 @@
-
 ---
-description: Returns the DeversiFi application and user configuration details.
+description: Returns the application and user configuration details.
 ---
 
-# **Get User Config**
+# Get User Config
 
 ### **Parameters**
 none

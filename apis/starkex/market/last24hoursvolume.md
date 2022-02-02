@@ -2,7 +2,7 @@
 description: Request information regarding the trading volume for the last 24 hours. The request returns the overall trading volume details in USD as well as the trading volume per token in USD and the native token.
 ---
 
-# **24hr Trading Volume**
+# 24hr Trading Volume
 
 ### **Parameters**
 

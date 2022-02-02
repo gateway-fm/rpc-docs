@@ -1,8 +1,7 @@
-
 ---
 description: This endpoint allows to cancel a specific withdrawal with a given id.
 ---
-# **Cancel Withdrawal**
+# Cancel Withdrawal
 
 ### **Parameters**
 `id` - string

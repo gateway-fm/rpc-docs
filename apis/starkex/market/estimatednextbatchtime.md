@@ -2,7 +2,7 @@
 description: Returns a countdown until the expected next batch proof is submitted onto the blockchain and the average time of previous batches. The next batch will include all pending withdrawals.
 ---
 
-# **Estimated Next Batch Time**
+# Estimated Next Batch Time
 
 ### **Parameters**
 

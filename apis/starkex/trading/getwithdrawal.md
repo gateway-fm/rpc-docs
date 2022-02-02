@@ -1,8 +1,7 @@
-
 ---
 description: This endpoint is used to retrieve details relating to a particular withdrawal.
 ---
-# **Get Withdrawal**
+# Get Withdrawal
 
 ### **Parameters**
 

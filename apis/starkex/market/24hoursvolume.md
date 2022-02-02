@@ -2,7 +2,7 @@
 description: Request information regarding the trading volume for a specific date. The request returns the overall trading volume details for all tokens in USD as well as the trading volume per token.
 ---
 
-# **Trading Volume History**
+# Trading Volume History
 
 ### **Parameters**
 

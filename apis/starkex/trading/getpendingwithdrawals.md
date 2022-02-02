@@ -1,9 +1,8 @@
-
 ---
 description: This endpoint is used to retrieve all pending withdrawals. If a token is specified, withdrawals pertaining to only that particular token are provided.
 ---
 
-# **Pending Withdrawals**
+# Pending Withdrawals
 
 ### **Parameters**
 `token` - string

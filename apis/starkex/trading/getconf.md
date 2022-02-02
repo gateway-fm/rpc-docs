@@ -1,8 +1,7 @@
-
 ---
 description: Returns the application configuration details.
 ---
-# **Get Config**
+# Get Config
 
 ### **Parameters**
 

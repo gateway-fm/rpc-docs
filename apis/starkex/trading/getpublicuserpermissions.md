@@ -1,8 +1,7 @@
-
 ---
 description: Used to get all configured permissions for the authenticated user
 ---
-# **Get Public Permissions**
+# Get Public Permissions
 
 ### **Parameters**
 none

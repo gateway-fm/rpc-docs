@@ -1,8 +1,8 @@
 ---
-description: This public endpoint allows to keep track of the state of DeversiFi orderbooks on a price aggregated basis with customizable precision.
+description: This public endpoint allows to keep track of the state of orderbooks on a price aggregated basis with customizable precision.
 ---
 
-# **Orderbook**
+# Orderbook
 
 ### **Parameters**
 
