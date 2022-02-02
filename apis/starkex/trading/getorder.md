@@ -40,7 +40,7 @@ curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/getOrder \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \  
--d '{"orderId": "111", "cid": "some-order-2083236893"}'
+-d '{"orderId": "LWwrEi9KePx"'
 ```
 
 
@@ -48,13 +48,15 @@ Result
 
 ```javascript
 {
-    "_id": "QrPujXPVQBY",
-    "symbol": "ETH:USDT",
-    "amount": -0.8,
-    "price": 281,
-    "totalFilled": 0,
     "pending": false,
     "canceled": false,
-    "active": true
-  }
+    "awaitingSettlement": 0,
+    "totalFilled": -0.051,
+    "active": false,
+    "_id": "LWwrEi9KePx",
+    "symbol": "ETH:USDC",
+    "amount": -0.051,
+    "price": 2502.5,
+    "cid": "mycid-et87a"
+}
 ```
