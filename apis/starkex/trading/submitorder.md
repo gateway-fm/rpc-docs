@@ -159,5 +159,4 @@ Result
   "createdAt": "2020-05-20T16:24:36.452Z",
   "updatedAt": "2020-05-20T16:24:36.452Z"
 }
-Response details
 ```
