@@ -6,7 +6,7 @@ description: Request information regarding all recently completed trades for a g
 
 ### **Parameters**
 
-`Symbol` - string
+`Symbol` - trading pair
 
 ### **Returns**
 
@@ -34,10 +34,9 @@ Used to determine whether or not the transaction originated as a buy or sell.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/trades/{Symbol} \
+curl https://rpc.dev.gateway.fm/v1/starkex/stg/trading/r/trades/ETH:USDT \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
--H "GFM-StarkEx-Authorization: <EcRecover_value>" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json"
 ```
