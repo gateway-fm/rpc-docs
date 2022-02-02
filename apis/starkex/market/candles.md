@@ -54,7 +54,6 @@ Request
 curl https://rpc.dev.gateway.fm/v1/starkex/stg/market-data/candles/trade:1m:ETH:USDT/hist?limit=10&start=1517923200000&end=1577923200000&sort=-1 \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
--H "GFM-StarkEx-Authorization: <EcRecover_value>" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json"
 ```
