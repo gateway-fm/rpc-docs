@@ -29,7 +29,7 @@ The withdrawal is ready to be requested.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/prod/v1/trading/r/withdrawHistory \
+curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/withdrawHistory \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

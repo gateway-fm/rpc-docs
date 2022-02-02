@@ -25,7 +25,7 @@ It is the available balance for the user corresponding to the specified token.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/prod/v1/trading/r/getBalance \
+curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/getBalance \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
