@@ -21,7 +21,7 @@ The trading volume for the address quoted in USD.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/USDRanking \
+curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/USDRanking \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Accept: application/json" \

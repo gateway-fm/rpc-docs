@@ -46,7 +46,7 @@ Daily low.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/market-data/ticker/ETH:USDT \
+curl https://rpc.gateway.fm/v1/starkex/stg/market-data/ticker/ETH:USDT \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Accept: application/json" \

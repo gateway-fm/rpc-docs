@@ -61,7 +61,7 @@ The date and time when the order was activated.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/orderHistory \
+curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/orderHistory \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

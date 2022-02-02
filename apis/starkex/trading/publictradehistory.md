@@ -14,7 +14,7 @@ none
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/publicTradeHistory/{user} \
+curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/publicTradeHistory/{user} \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

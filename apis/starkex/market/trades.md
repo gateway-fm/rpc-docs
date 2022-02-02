@@ -34,7 +34,7 @@ Used to determine whether or not the transaction originated as a buy or sell.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/trading/r/trades/ETH:USDT \
+curl https://rpc.gateway.fm/v1/starkex/stg/trading/r/trades/ETH:USDT \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Accept: application/json" \

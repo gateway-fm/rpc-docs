@@ -28,7 +28,7 @@ It is the part of the balance currently in open orders or pending withdrawal.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/getBalanceForUser/{userEthAddress} \
+curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/getBalanceForUser/{userEthAddress} \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

@@ -40,7 +40,7 @@ Ethereum address.
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/r/getUserConf \
+curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/getUserConf \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

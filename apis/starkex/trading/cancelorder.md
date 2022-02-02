@@ -23,7 +23,7 @@ only if order is already canceled
 Request
 
 ```bash
-curl https://rpc.dev.gateway.fm/v1/starkex/stg/v1/trading/w/cancelOrder \
+curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/w/cancelOrder \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
