@@ -1,8 +1,8 @@
 
 ---
-description: Return current fee rate for a given address. This rate is dependent on the trading volume of the user.
+description: An authenticated endpoint used to retrieve a vaultId for given token.
 ---
-#Get Fee Rate
+# **Get Vault Id**
 
 ### **Parameters**
 `token` - string

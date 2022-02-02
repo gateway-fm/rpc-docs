@@ -2,7 +2,7 @@
 description: Request information regarding the trading volume of a specific address for the last 30 days. The request returns the overall trading volume details for all tokens in USD as well as the trading volume per token. Results are cached for 60 minutes.
 ---
 
-#User 30-day volume
+# **User 30-day volume**
 
 ### **Parameters**
 

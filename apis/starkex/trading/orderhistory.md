@@ -2,7 +2,7 @@
 ---
 description: This method is used to retrieve a list of all past orders for a user. This includes executed trades, as well as expired and cancelled orders. The limit of orders returned is 1000.
 ---
-#All Orders
+# **Order History**
 
 ### **Parameters**
 `symbol` - string

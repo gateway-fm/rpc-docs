@@ -2,7 +2,7 @@
 ---
 description: Submit a signed notification of a new deposit made.
 ---
-#New Deposit
+# **New Deposit**
 
 ### **Parameters**
 

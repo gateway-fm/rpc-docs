@@ -2,7 +2,7 @@
 description: The ticker endpoint provides a high level overview of the state of the market for a specified pair. It shows the current best bid and ask, the last traded price, as well as information on the daily volume and price movement over the last day.
 ---
 
-#Ticker
+# **Ticker**
 
 ### **Parameters**
 

@@ -2,7 +2,7 @@
 ---
 description: Returns a range of gas prices in Wei to use with on chain transactions.
 ---
-#Get Gas Price
+# **Get Gas Price**
 
 ### **Parameters**
 none

@@ -2,7 +2,7 @@
 ---
 description: This endpoint allows to cancel a specific order.
 ---
-#Cancel Order
+# **Cancel Order**
 
 ### **Parameters**
 

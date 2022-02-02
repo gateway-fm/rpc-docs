@@ -2,7 +2,7 @@
 ---
 description: This method is used to register a Stark key that corresponds to an Ethereum public address. This will return deversifi Signature or DeversiFi application and user configuration details.
 ---
-#Register
+# **Register**
 
 ### **Parameters**
 

@@ -2,7 +2,7 @@
 description: Request information regarding all completed trades in a time range for a given market pair
 ---
 
-#Trades Since Date History
+# **Trades Since Date History**
 
 ### **Parameters**
 

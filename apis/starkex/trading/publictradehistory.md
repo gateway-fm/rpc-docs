@@ -2,7 +2,7 @@
 ---
 description: This method is used to retrieve a list of all past executed trades for a user. This includes the different trades that have been settled for each fully executed or partially executed order.
 ---
-#User Trade History
+# **User Trade History**
 
 ### **Parameters**
 none

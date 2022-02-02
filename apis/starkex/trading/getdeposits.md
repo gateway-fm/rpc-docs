@@ -2,7 +2,7 @@
 ---
 description: This is an authenticated endpoint used to retrieve deposits. A token can be specified to get deposits for a specific token. The limit of deposits returned is 1000.
 ---
-#Deposit History
+# **Deposit History**
 
 ### **Parameters**
 

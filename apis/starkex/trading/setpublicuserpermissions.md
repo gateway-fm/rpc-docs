@@ -2,7 +2,7 @@
 ---
 description: Used to set a specific permission for a given user
 ---
-#Set Public Permissions
+# **Set Public Permissions**
 
 ### **Parameters**
 `key` - string

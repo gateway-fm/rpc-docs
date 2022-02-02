@@ -2,7 +2,7 @@
 description: This returns a user ranking by overall trading volume quoted in USD. If the parameters startDate and endDate are provided, the ranking includes only trading volume within that window of time.
 ---
 
-#User ranking by volume
+# **User ranking by volume**
 
 ### **Parameters**
 
