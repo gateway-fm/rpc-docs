@@ -42,7 +42,7 @@ EcRecover eyJub25jZSI6InYyLTE2NDM4MTQwMTMuNTY3Iiwic2lnbmF0dXJlIjoiMHgyNjUxNzIzMG
 And with the Bearer token taken from dashboard the next authenticated endpoint used to retrieve user balance could be requested:
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/getBalance \
+curl https://rpc.gateway.fm/v1/starkex/stg/trading/r/getBalance \
 -X POST \
 -H "Authorization: Bearer NeU_ybxuH2fXIjZ7viXjMbqOGdZtkAQp.gcGKzMYhSb1KtJoG" \
 -H "GFM-StarkEx-Authorization: EcRecover eyJub25jZSI6InYyLTE2NDM4MTQwMTMuNTY3Iiwic2lnbmF0dXJlIjoiMHgyNjUxNzIzMGJlMTNjZmUzNTQ0NDdiZjMwOWEyMTZhYzQ1Y2E1ODNhOGMyNmU3NDcyNWNjY2MzNmFkZjI0OGYwMjE0MTAzZTI1MjM2MDY0ZDQxNWNhZWVlZTBhNjk2ODgzNWZiNTFhN2JiNTBhNTcyZmQxNTlmNDRiMDcwZGJkNDFjIn0=" \

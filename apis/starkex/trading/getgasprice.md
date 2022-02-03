@@ -30,7 +30,7 @@ The approximate time for a transaction confirmation when using cheap as the gas 
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/getGasPrice \
+curl https://rpc.gateway.fm/v1/starkex/stg/trading/r/getGasPrice \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Accept: application/json" \

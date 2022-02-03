@@ -34,7 +34,7 @@ Pending status true or false.
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/v1/trading/r/getOrder \
+curl https://rpc.gateway.fm/v1/starkex/stg/trading/r/getOrder \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
