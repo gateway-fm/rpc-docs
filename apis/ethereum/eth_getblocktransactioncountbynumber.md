@@ -30,22 +30,6 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["latest"],"id":0}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_getBlockTransactionCountByNumber",
-    "params":["latest"],
-    "id":0
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 

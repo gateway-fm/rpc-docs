@@ -26,16 +26,16 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"],"id":1}'
+-d '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0x58fe2b09d4c7f44899d3b657d5e98e0913786d4db887fb57125b81d02663c4f7"],"id":1}'
 ```
 
 Result
 
 ```javascript
 {
-  "jsonrpc": "2.0",
-  "id": 1,
-  "result": "0xb0"
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x2c"
 }
 ```
 
