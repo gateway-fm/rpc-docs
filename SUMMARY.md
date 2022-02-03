@@ -5,6 +5,7 @@
 ## RPC Documentation <a href="#apis" id="apis"></a>
 
 * [StarkEx API](apis/starkex/README.md)
+* [Authorisation](apis/starkex/authorization.md)
 * **Market**
   * [Trading Volume History](apis/starkex/market/24hoursvolume.md)
   * [User 30-day volume](apis/starkex/market/30daysvolume.md)
@@ -40,6 +41,5 @@
   * [New Withdrawal](apis/starkex/trading/withdraw.md)
   * [Withdrawal History](apis/starkex/trading/withdrawhistory.md)
 * **  **
-* [Authorisation](apis/starkex/authorisation.md)
 * [Fills history](apis/starkex/fills.md)
 * [Transfers History](apis/starkex/transfers.md)
