@@ -40,7 +40,7 @@ curl https://rpc.gateway.fm/v1/starkex/stg/trading/r/getOrder \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \  
--d '{"orderId": "LWwrEi9KePx"'
+-d '{"orderId": "LWwrEi9KePx"}'
 ```
 
 
