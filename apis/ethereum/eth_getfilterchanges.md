@@ -8,21 +8,15 @@ description: >-
 
 ### Parameters
 
-1. `QUANTITY` - the filter id.
+`QUANTITY` - the filter id.
 
-```javascript
-params: [
-  "0xfe704947a3cd3ca12541458a4321c869"
-]
-```
 
 ### **Returns**
 
 `Array` - Array of log objects, or an empty array if nothing has changed since last poll.
 
-{% hint style="info" %}
 **NOTE: **`eth_getFilterChanges` only returns logs since the filter was **created**, regardless of the block passed in to create the filter. To get logs ranging from a specific block you should use [`eth_getLogs`](eth\_getlogs.md)` .`
-{% endhint %}
+
 
 * For filters created with `eth_newBlockFilter` the return are block hashes (`DATA`, 32 Bytes), e.g. `["0x3454645634534..."]`.
 * For filters created with `eth_newPendingTransactionFilter`  the return are transaction hashes (`DATA`, 32 Bytes), e.g. `["0x6345343454645..."]`.
@@ -41,8 +35,6 @@ params: [
 ### ****[**Example**]
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
@@ -50,22 +42,6 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":73}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_getFilterChanges",
-    "params":["0xfe704947a3cd3ca12541458a4321c869"],
-    "id":73
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
@@ -97,4 +73,3 @@ Result
 }
 ```
 
-###

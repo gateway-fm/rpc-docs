@@ -19,13 +19,7 @@ These two computations will return the same results:
 
 ### **Parameters**
 
-1. `QUANTITY` - The filter id.
-
-```javascript
-params: [
-  "0xfe704947a3cd3ca12541458a4321c869"
-]
-```
+`QUANTITY` - The filter id.
 
 ### **Returns**
 
@@ -34,8 +28,6 @@ See [`eth_getFilterChanges`](./#eth_getfilterchanges)``
 ### ****[**Example**]
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
@@ -43,22 +35,6 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":74}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_getFilterLogs",
-    "params":["0xfe704947a3cd3ca12541458a4321c869"],
-    "id":74
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
@@ -89,5 +65,3 @@ Result
     }
 }
 ```
-
-###

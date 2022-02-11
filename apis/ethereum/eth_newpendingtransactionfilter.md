@@ -17,8 +17,6 @@ None
 ### ****[**Example**]
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
@@ -26,22 +24,6 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":0}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_newPendingTransactionFilter",
-    "params":[],
-    "id":73
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
@@ -52,5 +34,3 @@ Result
   "result": "0xa08914f1caedfcbe814d9fb33e69678d"
 }
 ```
-
-###

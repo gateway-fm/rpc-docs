@@ -1,14 +1,9 @@
 ---
 description: >-
-  Generates and returns an estimate of how much gas is necessary to allow the
-  transaction to complete. The transaction will not be added to the blockchain.
+  Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. Note that the estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including EVM mechanics and node performance.
 ---
 
 # eth\_estimateGas
-
-{% hint style="info" %}
-**Note:** The estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including EVM mechanics and node performance. Estimates are served directly from nodes, we're not doing anything special to the value so the rest of the network is likely seeing the same.
-{% endhint %}
 
 ### **Parameters**
 
@@ -21,52 +16,27 @@ description: >-
   * `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI
 * `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
-{% hint style="warning" %}
-**NOTE**
-
-* `eth_estimateGas`** **will check the balance of the sender (to make sure that the sender has enough gas to complete the request). This means that even though the call doesn't consume any gas, the `from` address must have enough gas to execute the transaction.
-* If no `gas` is specified geth uses the block gas limit from the pending block as an upper bound. As a result the returned estimate might not be enough to executed the call/transaction when the amount of actual gas needed is higher than the pending block gas limit.
-{% endhint %}
-
 ### Returns
 
 `QUANTITY` - the amount of gas used.
 
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+-d '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{"from": "0x3d14de87b5ade1c61a0b7ca29f7632e6e756b8bf","to": "0x4c88153de66e84c6691fa6bf5b5823530300a942"}],"id":1}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_estimateGas",
-    "params":[{see above}],
-    "id":1
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
 ```javascript
 {
-  "id":1,
-  "jsonrpc": "2.0",
-  "result": "0x5208" // 21000
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x5208"
 }
 ```
 

@@ -8,12 +8,6 @@ description: Returns the number of transactions in a block matching the given bl
 
 * `QUANTITY|TAG` - integer of a block number, or the string "earliest", "latest" or "pending", as in the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
-```javascript
-params: [
-    'latest',
-]
-```
-
 ### Returns
 
 * `QUANTITY` - integer of the number of transactions in this block.
@@ -21,23 +15,21 @@ params: [
 ### [Example]
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["latest"],"id":0}'
+-d '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x52A8CA"],"id":13}'
 ```
 
 Result
 
 ```javascript
 {
-  "jsonrpc": "2.0",
-  "id": 0,
-  "result": "0xee"
+    "jsonrpc": "2.0",
+    "id": 13,
+    "result": "0x49"
 }
 ```
 

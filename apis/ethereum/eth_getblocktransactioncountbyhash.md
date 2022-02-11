@@ -8,12 +8,6 @@ description: Returns the number of transactions in a block matching the given bl
 
 * `DATA`, 32 Bytes - hash of a block.
 
-  ```javascript
-  params: [ 
-      '0x8243343df08b9751f5ca0c5f8c9c0460d8a9b6351066fae0acbd4d3e776de8bb' 
-  ]
-  ```
-
 ### Returns
 
 * `QUANTITY` - integer of the number of transactions in this block.

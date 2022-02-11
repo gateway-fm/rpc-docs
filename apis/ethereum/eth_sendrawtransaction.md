@@ -12,7 +12,7 @@ Gateway does not store keys, so transactions sent via Gateway must be signed ahe
 
 ### Parameters
 
-`DATA`, The signed transaction data.
+`DATA` The signed transaction data.
 
 ```javascript
 params: ["0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"]

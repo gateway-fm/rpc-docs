@@ -23,70 +23,54 @@ description: Returns a collection of historical gas information
 
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/rinkeby \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer privateKeyPart.publicKeyPart"
--d '{"jsonrpc":"2.0","method":"eth_feeHistory","params":[4, "latest", [25, 75]],"id":1}'
+-d '{"jsonrpc":"2.0","method":"eth_feeHistory","params":[4, "latest", [3, 10]],"id":1}'
 ```
-{% endtab %}
-
-{% tab title="Postman" %}
-```http
-URL: https://rpc.gateway.fm/v1/ethereum/mainnet
-RequestType: POST
-Body: 
-{
-    "jsonrpc":"2.0",
-    "method":"eth_feeHistory",
-    "params":[4, "latest", [25, 75]],
-    "id":1
-}
-```
-{% endtab %}
-{% endtabs %}
 
 Result
 
 ```javascript
 {
-  "id": "1",
-  "jsonrpc": "2.0",
-  "result": {
-    "oldestBlock": 10762137,
-    "reward": [
-      [
-        "0x4a817c7ee",
-        "0x4a817c7ee"
-      ], [
-        "0x773593f0",
-        "0x773593f5"
-      ], [
-        "0x0",
-        "0x0"
-      ], [
-        "0x773593f5",
-        "0x773bae75"
-      ]
-    ],
-    "baseFeePerGas": [
-      "0x12",
-      "0x10",
-      "0x10",
-      "0xe",
-      "0xd"
-    ],
-    "gasUsedRatio": [
-      0.026089875,
-      0.406803,
-      0,
-      0.0866665
-    ]
-  }
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+        "baseFeePerGas": [
+            "0xfc64c81be",
+            "0x102b65e903",
+            "0xea6002ba3",
+            "0xdb1712831",
+            "0xe8ee3d266"
+        ],
+        "gasUsedRatio": [
+            0.6001403962364085,
+            0.1237159,
+            0.23913748224858425,
+            0.7526904013787193
+        ],
+        "oldestBlock": "0xd873a3",
+        "reward": [
+            [
+                "0xed12642",
+                "0x59682f00"
+            ],
+            [
+                "0x59682f00",
+                "0x59682f00"
+            ],
+            [
+                "0x3b9aca00",
+                "0x3b9aca00"
+            ],
+            [
+                "0x3b9aca00",
+                "0x46d62fcf"
+            ]
+        ]
+    }
 }
 ```
 
