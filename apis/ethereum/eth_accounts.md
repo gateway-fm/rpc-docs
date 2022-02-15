@@ -1,8 +1,9 @@
 ---
 description: Returns a list of addresses owned by client.
-The method has been deprecated
 ---
->**The method has been deprecated**
+
+**The method has been deprecated**
+
 # eth_accounts
 
 ### **Parameters**

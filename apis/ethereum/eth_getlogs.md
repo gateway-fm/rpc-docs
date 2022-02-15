@@ -5,10 +5,8 @@ description: >-
 
 # eth\_getLogs
 
-{% hint style="warning" %}
 **NOTE**: You can make `eth_getLogs` requests with up to a _**2K block range**_ and _**150MB**_ _**limit on the response size**_. You can also request _**any block range**_ with a cap of _**10K logs in the response**_.
 
-{% endhint %}
 
 ### Parameters
 

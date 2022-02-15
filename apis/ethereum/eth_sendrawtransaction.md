@@ -6,30 +6,17 @@ description: >-
 
 # eth_sendRawTransaction
 
-{% hint style="warning" %}
 Gateway does not store keys, so transactions sent via Gateway must be signed ahead of time using another provider like [ethers](https://docs.ethers.io/v5/api/signer/) (via `eth_signTransaction`) and sent with `eth_sendRawTransaction`.
-{% endhint %}
 
 ### Parameters
 
 `DATA` The signed transaction data.
 
-```javascript
-params: ["0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"]
-```
-
 ### Returns
 
 `DATA`, 32 Bytes - the transaction hash, or the zero hash if the transaction is not yet available.
 
-Use [`eth_getTransactionReceipt`](./#eth_gettransactionreceipt) to get the contract address after the transaction was mined when you created a contract.
-
 **Example**
-
-{% hint style="danger" %}
-**Note:** Since `eth_sendRawTransaction` is a request used for writing to the blockchain and changes its state, it is impossible to execute the same request twice.
-This means if you were to copy the example given below you will not get the expected response.
-{% endhint %}
 
 Request
 
@@ -38,15 +25,15 @@ curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"],"id":1}'
+-d '{"id": 6008149,"jsonrpc": "2.0","method": "eth_sendRawTransaction","params": ["0xf8687884f46109038252089447ac4f3a5ea94b648672648e730bfe48ed6e734985e8d4a51000802ca0ee5f7c40c98ce6f0f2aa05ebb65e96ddf402f1152fbb8b76893ddb2b0fd6f1d0a068e60320ad7ab56a5200d55ba97c783d4ad37945eb74d1f5d3100155f059fbae"]}'
 ```
 
 Result
 
 ```javascript
 {
-  "id":1,
-  "jsonrpc": "2.0",
-  "result": "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331"
-}
+  "jsonrpc":"2.0",
+  "id":6008149,
+  "result":"0x3831c25a7e0e7fc8a3ce5c5a6b4b93a1608a362d6ce08015061463f930f0774b"
+  }
 ```

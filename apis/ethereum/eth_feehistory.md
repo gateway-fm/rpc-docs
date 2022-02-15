@@ -28,7 +28,7 @@ curl https://rpc.gateway.fm/v1/ethereum/rinkeby \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_feeHistory","params":[4, "latest", [3, 10]],"id":1}'
+-d '{"jsonrpc":"2.0","method":"eth_feeHistory","params":[2, "latest", [15, 25]],"id":1}'
 ```
 
 Result
@@ -39,35 +39,23 @@ Result
     "id": 1,
     "result": {
         "baseFeePerGas": [
-            "0xfc64c81be",
-            "0x102b65e903",
-            "0xea6002ba3",
-            "0xdb1712831",
-            "0xe8ee3d266"
+            "0x11c631d8ad",
+            "0x128ae9cd07",
+            "0x13c54feb9f"
         ],
         "gasUsedRatio": [
-            0.6001403962364085,
-            0.1237159,
-            0.23913748224858425,
-            0.7526904013787193
+            0.6729319814412283,
+            0.764929106848155
         ],
-        "oldestBlock": "0xd873a3",
+        "oldestBlock": "0xd8bdaa",
         "reward": [
-            [
-                "0xed12642",
-                "0x59682f00"
-            ],
             [
                 "0x59682f00",
                 "0x59682f00"
             ],
             [
-                "0x3b9aca00",
-                "0x3b9aca00"
-            ],
-            [
-                "0x3b9aca00",
-                "0x46d62fcf"
+                "0x59682f00",
+                "0x59682f00"
             ]
         ]
     }
