@@ -12,7 +12,8 @@ description: Returns the number of uncles in a block matching the give block num
 
 `QUANTITY` - integer of the number of uncles in this block.
 
-### [Example]
+### **Example**
+
 Request
 
 ```bash

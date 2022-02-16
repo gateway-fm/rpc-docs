@@ -6,13 +6,14 @@ description: Returns the number of uncles in a block matching the given block ha
 
 ### Parameters
 
-* `DATA`, 32 Bytes - hash of a block.
+`DATA`, 32 Bytes - hash of a block.
 
 ### Returns
 
 `QUANTITY` - integer of the number of uncles in this block.
 
 ### **Example**
+
 Request
 
 ```bash

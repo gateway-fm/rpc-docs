@@ -32,7 +32,7 @@ description: >-
   * `topics`: `Array of DATA` - Array of 0 to 4 32 Bytes `DATA` of indexed log arguments.&#x20;
     * In _solidity_: The first topic is the _hash_ of the signature of the event (e.g. `Deposit(address,bytes32,uint256)`), except you declare the event with the `anonymous` specifier.
 
-### ****[**Example**]
+### **Example**
 Request
 
 ```bash

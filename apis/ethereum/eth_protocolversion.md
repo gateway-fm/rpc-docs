@@ -13,6 +13,7 @@ none
 `String` - The current ethereum protocol version.
 
 ### **Example**
+
 Request
 
 ```bash

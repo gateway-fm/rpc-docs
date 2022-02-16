@@ -25,7 +25,7 @@ These two computations will return the same results:
 
 See [`eth_getFilterChanges`](./#eth_getfilterchanges)``
 
-### ****[**Example**]
+### **Example**
 Request
 
 ```bash

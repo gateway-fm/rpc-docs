@@ -11,9 +11,10 @@ description: Returns code at a given address.
 
 ### Returns
 
-* `DATA` - the code from the given address.
+`DATA` - the code from the given address.
 
-### [Example]
+### **Example**
+
 Request
 
 ```bash

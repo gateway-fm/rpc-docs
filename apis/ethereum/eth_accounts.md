@@ -14,7 +14,7 @@ none
 
 `Array of DATA`, 20 Bytes - addresses owned by the client.
 
-#### **Example**
+### **Example**
 
 Request
 

@@ -6,13 +6,13 @@ description: Returns the number of transactions in a block matching the given bl
 
 ### Parameters
 
-* `DATA`, 32 Bytes - hash of a block.
+`DATA`, 32 Bytes - hash of a block.
 
 ### Returns
 
-* `QUANTITY` - integer of the number of transactions in this block.
+`QUANTITY` - integer of the number of transactions in this block.
 
-### [Example]
+### **Example**
 Request
 
 ```bash

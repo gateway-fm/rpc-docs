@@ -15,7 +15,8 @@ description: >-
 
 `Boolean` - `true` if the filter was successfully uninstalled, otherwise `false`.
 
-### ****[**Example**]
+### **Example**
+
 Request
 
 ```bash

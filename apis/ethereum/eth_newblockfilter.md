@@ -14,7 +14,7 @@ None
 
 `QUANTITY` - A filter id.
 
-### ****[**Example**]
+### **Example**
 Request
 
 ```bash

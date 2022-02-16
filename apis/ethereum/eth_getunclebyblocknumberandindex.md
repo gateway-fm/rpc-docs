@@ -15,7 +15,8 @@ description: >-
 
 See [`eth_getBlockByHash`](./#eth_getblockbyhash)
 
-#### [Example]
+### **Example**
+
 Request
 
 ```bash

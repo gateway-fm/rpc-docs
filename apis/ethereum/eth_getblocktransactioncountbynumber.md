@@ -6,13 +6,14 @@ description: Returns the number of transactions in a block matching the given bl
 
 ### Parameters
 
-* `QUANTITY|TAG` - integer of a block number, or the string "earliest", "latest" or "pending", as in the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
+`QUANTITY|TAG` - integer of a block number, or the string "earliest", "latest" or "pending", as in the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
 ### Returns
 
-* `QUANTITY` - integer of the number of transactions in this block.
+`QUANTITY` - integer of the number of transactions in this block.
 
-### [Example]
+### **Example**
+
 Request
 
 ```bash

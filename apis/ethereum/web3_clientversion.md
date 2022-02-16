@@ -13,6 +13,7 @@ none
 `String` - The current client version
 
 ### **Example**
+
 Request
 
 ```bash

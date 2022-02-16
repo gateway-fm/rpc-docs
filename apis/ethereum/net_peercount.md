@@ -13,6 +13,7 @@ none
 `QUANTITY` - integer of the number of connected peers.
 
 ### **Example**
+
 Request
 
 ```bash

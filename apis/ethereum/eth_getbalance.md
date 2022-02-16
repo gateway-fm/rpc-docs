@@ -6,8 +6,8 @@ description: Returns the balance of the account of a given address.
 
 ### Parameters
 
-1. `DATA`, 20 Bytes - address to check for balance.
-2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
+* `DATA`, 20 Bytes - address to check for balance.
+* `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
 ```javascript
 params: [

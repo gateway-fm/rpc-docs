@@ -13,7 +13,8 @@ none
 
 `Boolean` - `true` when listening, otherwise `false`.
 
-#### ****[**Example**]
+### **Example**
+
 Request
 
 ```bash

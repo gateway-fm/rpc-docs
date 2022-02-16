@@ -9,9 +9,9 @@ description: >-
 
 ### **Parameters**
 
-1. `DATA`, 20 Bytes - address of the account.
-2. `ARRAY`, 32 Bytes - array of storage-keys which should be proofed and included. See[`eth_getStorageAt`](./#eth_getstorageat)
-3. `QUANTITY|TAG` - integer block number, or the string `"latest"` or `"earliest"`, see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter)
+* `DATA`, 20 Bytes - address of the account.
+* `ARRAY`, 32 Bytes - array of storage-keys which should be proofed and included. See[`eth_getStorageAt`](./#eth_getstorageat)
+* `QUANTITY|TAG` - integer block number, or the string `"latest"` or `"earliest"`, see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter)
 
 ### **Returns**
 

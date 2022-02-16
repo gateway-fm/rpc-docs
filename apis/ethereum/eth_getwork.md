@@ -10,12 +10,13 @@ none
 
 ### Returns
 
-`Array` - Array with the following properties:
-    `DATA`, 32 Bytes - current block header pow-hash
-    `DATA`, 32 Bytes - the seed hash used for the DAG.
-    `DATA`, 32 Bytes - the boundary condition (“target”), 2^256 / difficulty.
+* `Array` - Array with the following properties:
+    * `DATA`, 32 Bytes - current block header pow-hash
+    * `DATA`, 32 Bytes - the seed hash used for the DAG.
+    * `DATA`, 32 Bytes - the boundary condition (“target”), 2^256 / difficulty.
 
-### [Example]
+### **Example**
+
 Request
 
 ```bash

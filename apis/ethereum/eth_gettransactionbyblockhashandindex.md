@@ -8,15 +8,16 @@ description: >-
 
 ### Parameters
 
-`DATA`, 32 Bytes - hash of a block.
+* `DATA`, 32 Bytes - hash of a block.
 
-`QUANTITY` - integer of the transaction index position.
+* `QUANTITY` - integer of the transaction index position.
 
 ### Returns
 
 See [`eth_getTransactionByHash`](./#eth_gettransactionbyhash)\`\`
 
-### [Example]
+### **Example**
+
 Request
 
 ```bash

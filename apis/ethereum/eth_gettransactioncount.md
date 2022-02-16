@@ -20,10 +20,10 @@ params: [
 
 `QUANTITY` - integer of the number of transactions send from this address.
 
+### **Example**
+
 Request
 
-{% tabs %}
-{% tab title="Curl" %}
 ```bash
 curl https://rpc.gateway.fm/v1/ethereum/mainnet \
 -X POST \

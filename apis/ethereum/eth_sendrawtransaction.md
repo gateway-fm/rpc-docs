@@ -16,7 +16,7 @@ Gateway does not store keys, so transactions sent via Gateway must be signed ahe
 
 `DATA`, 32 Bytes - the transaction hash, or the zero hash if the transaction is not yet available.
 
-**Example**
+### **Example**
 
 Request
 

@@ -15,7 +15,7 @@ description: >-
 
 ## Returns
 
-* `DATA` - the value at this storage position.
+`DATA` - the value at this storage position.
 
 ### Example
 

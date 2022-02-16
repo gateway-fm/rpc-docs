@@ -18,7 +18,7 @@ none
 `"4"`: Rinkeby Testnet
 `"42"`: Kovan Testnet
 
-#### **Example**
+### **Example**
 Request
 
 ```bash
@@ -37,5 +37,3 @@ Result
     "result":"1"
 }
 ```
-
-###

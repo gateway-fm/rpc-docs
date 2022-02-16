@@ -20,6 +20,7 @@ none
 * `highestBlock`: `QUANTITY` - The estimated highest block
 
 ### **Example**
+
 Request
 
 ```bash

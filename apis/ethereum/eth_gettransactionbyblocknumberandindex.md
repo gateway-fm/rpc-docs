@@ -16,7 +16,8 @@ description: >-
 
 See [`eth_getTransactionByHash`](./#eth_gettransactionbyhash)\`\`
 
-### [Example]
+### **Example**
+
 Request
 
 ```bash
