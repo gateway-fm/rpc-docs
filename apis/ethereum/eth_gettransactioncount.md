@@ -9,13 +9,6 @@ description: Returns the number of transactions sent from an address.
 * `DATA`, 20 Bytes - address.
 * `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
-```javascript
-params: [
-    '0xc94770007dda54cF92009BFF0dE90c06F603a09f',
-    'latest' // state at the latest block
-]
-```
-
 ### Returns
 
 `QUANTITY` - integer of the number of transactions send from this address.

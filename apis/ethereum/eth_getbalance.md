@@ -9,13 +9,6 @@ description: Returns the balance of the account of a given address.
 * `DATA`, 20 Bytes - address to check for balance.
 * `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
-```javascript
-params: [
-   '0xc94770007dda54cF92009BFF0dE90c06F603a09f',
-   'latest'
-]
-```
-
 ### Returns
 
 `QUANTITY` - integer of the current balance for the given address in wei.

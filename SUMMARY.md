@@ -5,7 +5,7 @@
 ## RPC Documentation <a href="#apis" id="apis"></a>
 
 * [StarkEx API](apis/starkex/README.md)
-  * [Authorisation](apis/starkex/authorization.md)
+  * [Authorization](apis/starkex/authorization.md)
 
 [//]: # (* **Market**)
 
