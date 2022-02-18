@@ -6,6 +6,16 @@
 
 * [StarkEx API](apis/starkex/README.md)
   * [Authorization](apis/starkex/authorization.md)
+  * [Get Balance](apis/starkex/trading/getbalance.md)
+  * [Get Config](apis/starkex/trading/getconf.md)
+  * [Pending Withdrawals](apis/starkex/trading/getpendingwithdrawals.md)
+  * [Get User Config](apis/starkex/trading/getuserconf.md)
+  * [Get VaultId](apis/starkex/trading/getvaultid.md)
+  * [Register](apis/starkex/trading/register.md)
+  * [Submit Order](apis/starkex/trading/submitorder.md)
+  * [Transfer](apis/starkex/trading/transfer.md)
+  * [Fills history](apis/starkex/fills.md)
+  * [Transfers History](apis/starkex/transfers.md)
 
 [//]: # (* **Market**)
 
@@ -37,10 +47,6 @@
 
 [//]: # (  * [Cancel Withdrawal]&#40;apis/starkex/trading/cancelwithdrawal.md&#41;)
 
-  * [Get Balance](apis/starkex/trading/getbalance.md)
-
-  * [Get Config](apis/starkex/trading/getconf.md)
-
 [//]: # (  * [Deposit History]&#40;apis/starkex/trading/getdeposits.md&#41;)
 
 [//]: # (  * [Get Fee Rate]&#40;apis/starkex/trading/getfeerate.md&#41;)
@@ -49,13 +55,7 @@
 
 [//]: # (  * [Order]&#40;apis/starkex/trading/getorder.md&#41;)
 
-  * [Pending Withdrawals](apis/starkex/trading/getpendingwithdrawals.md)
-
 [//]: # (  * [Get Public Permissions]&#40;apis/starkex/trading/getpublicuserpermissions.md&#41;)
-
-  * [Get User Config](apis/starkex/trading/getuserconf.md)
-
-  * [Get VaultId](apis/starkex/trading/getvaultid.md)
 
 [//]: # (  * [Get Withdrawal]&#40;apis/starkex/trading/getwithdrawal.md&#41;)
 
@@ -63,23 +63,13 @@
 
 [//]: # (  * [Order History]&#40;apis/starkex/trading/orderhistory.md&#41;)
 
-  * [Register](apis/starkex/trading/register.md)
-
 [//]: # (  * [Set Public Permissions]&#40;apis/starkex/trading/setpublicuserpermissions.md&#41;)
-
-  * [Submit Order](apis/starkex/trading/submitorder.md)
-  
-  * [Transfer](apis/starkex/trading/transfer.md)
 
 [//]: # (  * [New Withdrawal]&#40;apis/starkex/trading/withdraw.md&#41;)
 
 [//]: # (  * [Withdrawal History]&#40;apis/starkex/trading/withdrawhistory.md&#41;)
 
 [//]: # (* **  **)
-
-* [Fills history](apis/starkex/fills.md)
-
-* [Transfers History](apis/starkex/transfers.md)
 
 * **  **
 * [Ethereum API](apis/ethereum/README.md)
