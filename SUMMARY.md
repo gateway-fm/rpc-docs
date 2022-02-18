@@ -8,6 +8,7 @@
   * [Authorization](apis/starkex/authorization.md)
   * [Get Balance](apis/starkex/trading/getbalance.md)
   * [Get Config](apis/starkex/trading/getconf.md)
+  * [Get Gas Price](apis/starkex/trading/getgasprice.md)
   * [Pending Withdrawals](apis/starkex/trading/getpendingwithdrawals.md)
   * [Get User Config](apis/starkex/trading/getuserconf.md)
   * [Get VaultId](apis/starkex/trading/getvaultid.md)
@@ -51,7 +52,7 @@
 
 [//]: # (  * [Get Fee Rate]&#40;apis/starkex/trading/getfeerate.md&#41;)
 
-[//]: # (  * [Get Gas Price]&#40;apis/starkex/trading/getgasprice.md&#41;)
+
 
 [//]: # (  * [Order]&#40;apis/starkex/trading/getorder.md&#41;)
 
