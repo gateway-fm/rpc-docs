@@ -25,7 +25,7 @@ Skip applied on returned items
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/trading/transfers \
+curl https://rpc.gateway.fm/v1/starkex/{prod|stg}/trading/transfers \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

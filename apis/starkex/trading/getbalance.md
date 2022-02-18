@@ -1,5 +1,5 @@
 ---
-description: This is used to retrieve the total and active balances of a user per token. Active balance is the balance that is currently available. Total balance (specified as balance) is the sum of all the balances including those locked for trading.---
+description: This is used to retrieve the total and active balances of a user per token. Active balance is the balance that is currently available. Total balance (specified as balance) is the sum of all the balances including those locked for trading.
 ---
 # Balances
 
@@ -25,7 +25,7 @@ It is the available balance for the user corresponding to the specified token.
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/trading/r/getBalance \
+curl https://rpc.gateway.fm/v1/starkex/{prod|stg}/trading/r/getBalance \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

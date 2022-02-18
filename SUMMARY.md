@@ -31,15 +31,15 @@
 
 [//]: # (  * [User User 24-hours volume]&#40;apis/starkex/market/user24hoursvolume.md&#41;)
 
-[//]: # (* **Trading**)
+######  **Trading**
 
 [//]: # (  * [Cancel Order]&#40;apis/starkex/trading/cancelorder.md&#41;)
 
 [//]: # (  * [Cancel Withdrawal]&#40;apis/starkex/trading/cancelwithdrawal.md&#41;)
 
-[//]: # (  * [Balances]&#40;apis/starkex/trading/getbalance.md&#41;)
+  * [Get Balance](apis/starkex/trading/getbalance.md)
 
-[//]: # (  * [Get Config]&#40;apis/starkex/trading/getconf.md&#41;)
+  * [Get Config](apis/starkex/trading/getconf.md)
 
 [//]: # (  * [Deposit History]&#40;apis/starkex/trading/getdeposits.md&#41;)
 
@@ -49,13 +49,13 @@
 
 [//]: # (  * [Order]&#40;apis/starkex/trading/getorder.md&#41;)
 
-[//]: # (  * [Pending Withdrawals]&#40;apis/starkex/trading/getpendingwithdrawals.md&#41;)
+  * [Pending Withdrawals](apis/starkex/trading/getpendingwithdrawals.md)
 
 [//]: # (  * [Get Public Permissions]&#40;apis/starkex/trading/getpublicuserpermissions.md&#41;)
 
-[//]: # (  * [Get User Config]&#40;apis/starkex/trading/getuserconf.md&#41;)
+  * [Get User Config](apis/starkex/trading/getuserconf.md)
 
-[//]: # (  * [Get Vault Id]&#40;apis/starkex/trading/getvaultid.md&#41;)
+  * [Get VaultId](apis/starkex/trading/getvaultid.md)
 
 [//]: # (  * [Get Withdrawal]&#40;apis/starkex/trading/getwithdrawal.md&#41;)
 
@@ -63,13 +63,13 @@
 
 [//]: # (  * [Order History]&#40;apis/starkex/trading/orderhistory.md&#41;)
 
-[//]: # (  * [Register]&#40;apis/starkex/trading/register.md&#41;)
+  * [Register](apis/starkex/trading/register.md)
 
 [//]: # (  * [Set Public Permissions]&#40;apis/starkex/trading/setpublicuserpermissions.md&#41;)
 
-[//]: # (  * [Submit Order]&#40;apis/starkex/trading/submitorder.md&#41;)
-
-[//]: # (  * [Transfer]&#40;apis/starkex/trading/transfer.md&#41;)
+  * [Submit Order](apis/starkex/trading/submitorder.md)
+  
+  * [Transfer](apis/starkex/trading/transfer.md)
 
 [//]: # (  * [New Withdrawal]&#40;apis/starkex/trading/withdraw.md&#41;)
 
@@ -77,10 +77,11 @@
 
 [//]: # (* **  **)
 
-[//]: # (* [Fills history]&#40;apis/starkex/fills.md&#41;)
+* [Fills history](apis/starkex/fills.md)
 
-[//]: # (* [Transfers History]&#40;apis/starkex/transfers.md&#41;)
+* [Transfers History](apis/starkex/transfers.md)
 
+* **  **
 * [Ethereum API](apis/ethereum/README.md)
   * [eth_accounts](apis/ethereum/eth_accounts.md)
   * [eth_blocknumber](apis/ethereum/eth_blocknumber.md)

@@ -5,28 +5,23 @@ description: This endpoint is used to retrieve all pending withdrawals. If a tok
 # Pending Withdrawals
 
 ### **Parameters**
-`token` - string
-The token that will be withdrawn.
+`token` - string; The token that will be withdrawn.
 
 ### **Returns**
-`ethAddress` - string
-Ethereum public address of the user.
+`ethAddress` - string; Ethereum public address of the user.
 
-`token` - string
-The token that was withdrawn.
+`token` - string; The token that was withdrawn.
 
-`amount` - number
-The amount that was withdrawn.
+`amount` - number; The amount that was withdrawn.
 
-`starkKey` - string
-The Stark public key of the user.
+`starkKey` - string; The Stark public key of the user.
 
 #### **Example**
 
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/trading/r/getPendingWithdrawals \
+curl https://rpc.gateway.fm/v1/starkex/{prod|stg}/trading/r/getPendingWithdrawals \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

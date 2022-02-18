@@ -107,7 +107,7 @@ The date and time when the order was activated.
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/trading/w/submitOrder \
+curl https://rpc.gateway.fm/v1/starkex/{prod|stg}/trading/w/submitOrder \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \

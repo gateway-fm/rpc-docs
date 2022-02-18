@@ -9,44 +9,34 @@ none
 ### **Returns**
 `pagination` - object
 
-    `totalItems` - number
-    Total number of items matching the query
+    `totalItems` - number; Total number of items matching the query
     
-    `limit` - number
-    Limit applied on returned items
+    `limit` - number; Limit applied on returned items
     
-    `skip` - number
-    Skip applied on returned items
+    `skip` - number; Skip applied on returned items
 
 `items` - object
 
-`_id` - string
-Unique identifier representing this transfer
+`_id` - string; Unique identifier representing this transfer
 
-    `token` - string
-    Token transfered
+    `token` - string; Token transfered
     
-    `amount` - number
-    Amount transfered (effective amount received by the recipient)
+    `amount` - number; Amount transfered (effective amount received by the recipient)
     
-    `feeAmount` - number
-    Transfer fee amount (in transfer token units)
+    `feeAmount` - number; Transfer fee amount (in transfer token units)
     
-    `source` - string
-    Source Ethereum address
+    `source` - string; Source Ethereum address
     
-    `recipient` - string
-    Recipient Ethereum address
+    `recipient` - string; Recipient Ethereum address
     
-    `date` - string
-    Date and time of the transfer
+    `date` - string; Date and time of the transfer
 
 #### **Example**
 
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/starkex/stg/trading/fills \
+curl https://rpc.gateway.fm/v1/starkex/{prod|stg}/trading/fills \
 -X GET \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "GFM-StarkEx-Authorization: <EcRecover_value>" \
