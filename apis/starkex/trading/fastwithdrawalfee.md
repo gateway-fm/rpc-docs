@@ -1,7 +1,7 @@
 ---
 description: Return current withdrawal fee rate for a given token  
 ---
-# Get Vault Id
+# Get Withdrawal Fee rate
 
 ### **Parameters**
 `token` - string.
