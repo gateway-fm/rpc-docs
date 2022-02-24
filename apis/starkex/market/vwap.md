@@ -5,18 +5,15 @@ description: Returns current order book snapshot of a requested pair
 # VWAP
 
 ### **Parameters**
-
-`{pool}` is a valid DVF pool, like “ETH:USDT”, “DAI:ETH”, etc.
-`amount` - number; Order amount to fill positive for bid, negative for ask
-`isFirstIn` - boolean; Flag whether first symbol or second amount provided
+* `{pool}` is a valid DVF pool, like “ETH:USDT”, “DAI:ETH”, etc.
+* `amount` - number; Order amount to fill positive for bid, negative for ask
+* `isFirstIn` - boolean; Flag whether first symbol or second amount provided
 
 ### **Returns**
-
-`slippage`- number
-`estimatedPrice` - number
-`isEnoughLiquidity` - Boolean
-`executionPrice` - number
-
+* `slippage`- number
+* `estimatedPrice` - number
+* `isEnoughLiquidity` - Boolean
+* `executionPrice` - number
 
 #### **Example**
 

@@ -5,30 +5,16 @@ description: This is endpoint is used to retrieve the details for a specific ord
 **NOTE:** only used for debugging swaps that never finished
 
 ### **Parameters**
-`orderId` - string
-The ID of the order. In case you want to view all open orders, check POST openOrders.
-
-`cid` - string
-An optional user-defined identifier for this order
+* `orderId` - string; The ID of the order. In case you want to view all open orders, check POST openOrders.
+* `cid` - string; An optional user-defined identifier for this order
 
 ### **Returns**
-`_id` - string
-Id for the order. This can be used for orderId when calling cancelOrder or getOrder
-
-`amount` - number
-Actual order amount.
-
-`price` - number
-Cost per unit.
-
-`symbol` - string
-Trading symbol for the order
-
-`canceled` - string
-Canceled status true or false.
-
-`pending` - string
-Pending status true or false.
+* `_id` - string; Id for the order. This can be used for orderId when calling cancelOrder or getOrder
+* `amount` - number; Actual order amount.
+* `price` - number; Cost per unit.
+* `symbol` - string; Trading symbol for the order
+* `canceled` - string; Canceled status true or false.
+* `pending` - string; Pending status true or false.
 
 #### **Example**
 

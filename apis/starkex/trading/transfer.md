@@ -5,115 +5,57 @@ description: Submit a request for internal transfer.
 
 ### **Parameters**
 
-`tx` - object
-StarkWare TransferRequest for main transfer
+* `tx` - object; StarkWare TransferRequest for main transfer
+  * `type` - string
+  * `amount` - string
+  * `expirationTimestamp` - integer
+  * `nonce` - integer
+  * `receiverPublicKey` - string
+  * `receiverVaultId` - integer
+  * `senderPublicKey` - string
+  * `senderVaultId` - integer
+  * `signature` - object
+    * `r` - string
+    * `s` - string
+  * `token` - string
 
-    `type` - string
-    
-    `amount` - string
-    
-    `expirationTimestamp` - integer
-    
-    `nonce` - integer
-    
-    `receiverPublicKey` - string
-    
-    `receiverVaultId` - integer
-    
-    `senderPublicKey` - string
-    
-    `senderVaultId` - integer
-    
-    `signature` - object
-    
-    `r` - string
-    
-    `s` - string
-    
-    `token` - string
-
-`feeTx` - object
-StarkWare TansferRequest for service fee
-
-    `type` - string
-    
-    `amount` - string
-    
-    `expirationTimestamp` - integer
-    
-    `nonce` - integer
-    
-    `receiverPublicKey` - string
-    
-    `receiverVaultId` - integer
-    
-    `senderPublicKey` - string
-    
-    `senderVaultId` - integer
-    
-    `signature` - object
-    
-        `r` - string
-        
-        `s` - string
-    
-    `token` - string
-
-`starkPublicKey` - object
-The Stark public key. Both the "x" and "y" part are required.
-
-    `x` - string
-    The "x" part of the Stark public key.
-    
-    `y` - string
-    The "y" part of the Stark public key.
-
-`memo` - string
-Optional memo string
-
-`partnerId` - string
-Optional partner Id string
+* `feeTx` - object; StarkWare TansferRequest for service fee
+  * `type` - string
+  * `amount` - string
+  * `expirationTimestamp` - integer
+  * `nonce` - integer
+  * `receiverPublicKey` - string
+  * `receiverVaultId` - integer
+  * `senderPublicKey` - string
+  * `senderVaultId` - integer
+  * `signature` - object
+    * `r` - string   
+    * `s` - string
+  * `token` - string
+  * `starkPublicKey` - object; The Stark public key. Both the "x" and "y" part are required.
+    * `x` - string; The "x" part of the Stark public key.
+    * `y` - string; The "y" part of the Stark public key.
+  * `memo` - string; Optional memo string
+  * `partnerId` - string; Optional partner Id string
 
 ### **Returns**
-`_id`  - string
-Transfer ID.
-
-`token` - string
-The token that was transferred.
-
-`amount` - string
-The amount that was transferred (in quantised units).
-
-`recipient` - string
-Deversifi user id of recipient of the transfer.
-
-`createdAt` - string
-The date and time transfer request was received.
-
-`updatedAt`  - string
-The date and time transfer request was received.
-
-`tx` - object
-
-    `type` - string
-    
-    `amount` - string
-    
-    `expirationTimestamp` - integer
-    
-    `nonce` - integer
-    
-    `receiverPublicKey` - string
-    
-    `receiverVaultId` - integer
-    
-    `senderPublicKey` - string
-    
-    `senderVaultId` - integer 
-    
-    `signature`
-    
-    `token` - string
+* `_id`  - string; Transfer ID.
+* `token` - string; The token that was transferred.
+* `amount` - string; The amount that was transferred (in quantised units).
+* `recipient` - string; Deversifi user id of recipient of the transfer.
+* `createdAt` - string; The date and time transfer request was received.
+* `updatedAt`  - string; The date and time transfer request was received.
+* `tx` - object
+  * `type` - string
+  * `amount` - string
+  * `expirationTimestamp` - integer
+  * `nonce` - integer
+  * `receiverPublicKey` - string
+  * `receiverVaultId` - integer
+  * `senderPublicKey` - string
+  * `senderVaultId` - integer
+  * `signature` 
+  * `token` - string
 
 #### **Example**
 

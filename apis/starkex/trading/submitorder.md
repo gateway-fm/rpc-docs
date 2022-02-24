@@ -4,104 +4,43 @@ description: This authenticated endpoint is used to submit an order.
 # Submit Order
 
 ### **Parameters**
-`cid` - string
-Optional custom order ID that could be set when placing order and used later to retrieve order. This ID is unique per user (user A and B can each have an order with cid = AAA, but the same user cannot have two orders with the same cid)
-
-`gid` - string
-
-`type` - string
-The type of order. Currently only “EXCHANGE_LIMIT” is accepted.
-
-`symbol` - string
-The trading pair.
-
-`amount` - number
-The token amount to be traded.
-
-`price` - number
-The cost per unit.
-
-`meta` - object
-A set of meta values.
-
-    `starkOrder` - object
-    Stark order related meta information.
-
-        `vaultIdSell` - number
-        The vault ID of the seller.
-
-        `vaultIdBuy` - number
-        The vault ID of the buyer.
-        
-        `amountSell` - string
-        The total amount to be sold.
-        
-        `amountBuy` - string
-        The total amount to be bought.
-        
-        `tokenSell` - string
-        The Stark token ID for the token being sold.
-        
-        `tokenBuy` - string
-        The Stark token ID for the token being bought.
-        
-        `nonce` - number
-        Nonce value.
-        
-        `expirationTimestamp` - number
-        Expiration timestamp of the order.
-
-    `starkMessage` - string
-    Stark Message ID.
-    
-    `ethAddress` - string
-    The Ethereum public address.
-    
-    `starkPublicKey` - object
-    Detailed information related to each available token.
-    
-    `starkSignature`  - object
-    Detailed information related to each available token.
-
-`protocol` - string
-
-`partnerId` - string
-
-`feeRate` - string
+* `cid` - string; Optional custom order ID that could be set when placing order and used later to retrieve order. This ID is unique per user (user A and B can each have an order with cid = AAA, but the same user cannot have two orders with the same cid)
+* `gid` - string
+* `type` - string; The type of order. Currently only “EXCHANGE_LIMIT” is accepted.
+* `symbol` - string; The trading pair.
+* `amount` - number; The token amount to be traded.
+* `price` - number; The cost per unit.
+* `meta` - object; A set of meta values.
+* `starkOrder` - object; Stark order related meta information.
+  * `vaultIdSell` - number; The vault ID of the seller.
+  * `vaultIdBuy` - number; The vault ID of the buyer.
+  * `amountSell` - string; The total amount to be sold.
+  * `amountBuy` - string; The total amount to be bought.
+  * `tokenSell` - string; The Stark token ID for the token being sold.   
+  * `tokenBuy` - string; The Stark token ID for the token being bought.   
+  * `nonce` - number; Nonce value.
+  * `expirationTimestamp` - number; Expiration timestamp of the order.
+  * `starkMessage` - string; Stark Message ID.
+  * `ethAddress` - string; The Ethereum public address.
+  * `starkPublicKey` - object; Detailed information related to each available token.
+  * `starkSignature`  - object; Detailed information related to each available token.
+* `protocol` - string
+* `partnerId` - string
+* `feeRate` - string
 
 ### **Returns**
-`_id` - string
-Id for the order. This can be used for orderId when calling cancelOrder or getOrder
+* `_id` - string; Id for the order. This can be used for orderId when calling cancelOrder or getOrder
+* `user` - string; Ethereum address of the user
+* `symbol` - string; Trading symbol for the order
+* `tokenSell` - string;  The token which is being sold
+* `tokenBuy` - string; The token which is being bought
+* `amount` - number; Original order size placed being sold or bought.
+* `price` - number; Cost per unit.
+* `type` - string; Type of the order. Currently, "EXCHANGE LIMIT" is the only type that is supported.
+* `createdAt` - string; The date and time when the order was created.
+* `updatedAt` - string; The date and time when the order was last updated.
+* `activatedAt` - string; The date and time when the order was activated.
 
-`user` - string
-Ethereum address of the user
-
-`symbol` - string
-Trading symbol for the order
-
-`tokenSell` - string
-The token which is being sold
-
-`tokenBuy` - string
-The token which is being bought
-
-`amount` - number
-Original order size placed being sold or bought.
-
-`price` - number
-Cost per unit.
-
-`type` - string
-Type of the order. Currently, "EXCHANGE LIMIT" is the only type that is supported.
-
-`createdAt` - string
-The date and time when the order was created.
-
-`updatedAt` - string
-The date and time when the order was last updated.
-
-`activatedAt` - string
-The date and time when the order was activated.
 #### **Example**
 
 Request

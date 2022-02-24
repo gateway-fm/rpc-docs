@@ -5,28 +5,18 @@ description: This method is used to register a Stark key that corresponds to an 
 
 ### **Parameters**
 
-`starkKey` - string
-The Stark public key.
+* `starkKey` - string; The Stark public key.
 
 ### **Returns**
-`DVF` - object
-This contains application configuration details to set up for deposits and trading.
-
-    `defaultFeeRate` - number; The default fee rate, if no volume or maker discount.
-
-    `deversifiAddress` - string; The address of the DeversiFi exchange.
-
-    `starkExContractAddress` - string; Stark deposit contract address.
-
-    `exchangeSymbols` - string; Currency pairs available at the DeversiFi exchange for trading
-
-    `tempStarkVaultId` - number; Transit Stark vault ID used for deposit privacy
-
-`tokenRegistry` - object; Detailed information related to each available token.
-
-`isRegistered` - string; Registration status.
-
-`ethAddress` - string; Ethereum address.
+* `DVF` - object; This contains application configuration details to set up for deposits and trading.
+  * `defaultFeeRate` - number; The default fee rate, if no volume or maker discount.
+  * `deversifiAddress` - string; The address of the DeversiFi exchange.
+  *`starkExContractAddress` - string; Stark deposit contract address.
+  * `exchangeSymbols` - string; Currency pairs available at the DeversiFi exchange for trading
+  * `tempStarkVaultId` - number; Transit Stark vault ID used for deposit privacy
+* `tokenRegistry` - object; Detailed information related to each available token.
+* `isRegistered` - string; Registration status.
+* `ethAddress` - string; Ethereum address.
 
 #### **Example**
 

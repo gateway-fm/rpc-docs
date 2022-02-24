@@ -7,18 +7,11 @@ description: Returns paginated list of transfers, also supports csv requests
 none
 
 ### **Returns**
-`pagination` - object
-
-`totalItems` - number
-Total number of items matching the query
-
-`limit` - number
-Limit applied on returned items
-
-`skip` - number
-Skip applied on returned items
-
-`items` - array
+* `pagination` - object
+* `totalItems` - number; Total number of items matching the query
+* `limit` - number; Limit applied on returned items
+* `skip` - number; Skip applied on returned items
+* `items` - array
 
 #### **Example**
 

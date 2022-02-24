@@ -8,26 +8,13 @@ description: Returns the application configuration details.
 none
 
 ### **Returns**
-`DVF` - object 
-This contains application configuration details to set up for deposits and trading.
-
-`defaultFeeRate` - number
-The default fee rate, if no volume or maker discount.
-
-`deversifiAddress` - string
-The address of the DeversiFi exchange.
-
-`starkExContractAddress` - string
-Stark deposit contract address.
-
-`exchangeSymbols` - array
-Currency pairs available at the DeversiFi exchange for trading
-
-`tempStarkVaultId` - number
-Transit Stark vault ID used for deposit privacy
-
-`tokenRegistry` - object
-Detailed information related to each available token.
+* `DVF` - object; This contains application configuration details to set up for deposits and trading.
+* `defaultFeeRate` - number; The default fee rate, if no volume or maker discount.
+* `deversifiAddress` - string; The address of the DeversiFi exchange.
+* `starkExContractAddress` - string; Stark deposit contract address.
+* `exchangeSymbols` - array; Currency pairs available at the DeversiFi exchange for trading
+* `tempStarkVaultId` - number; Transit Stark vault ID used for deposit privacy
+* `tokenRegistry` - object; Detailed information related to each available token.
 
 #### **Example**
 

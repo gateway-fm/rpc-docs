@@ -4,12 +4,10 @@ description: An authenticated endpoint used to retrieve a vaultId for given toke
 # Get Vault Id
 
 ### **Parameters**
-`token` - string
-The new token for which a new vault Id needs to be allocated.
+* `token` - string; The new token for which a new vault Id needs to be allocated.
 
 ### **Returns**
-number 
-The vault id for the requested vault.
+* number; The vault id for the requested vault.
 #### **Example**
 
 Request

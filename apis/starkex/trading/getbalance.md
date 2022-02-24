@@ -5,20 +5,13 @@ description: This is used to retrieve the total and active balances of a user pe
 
 ### **Parameters**
 
-`token` - string
-The token which the balance is specifically requested for.
+* `token` - string; The token which the balance is specifically requested for.
 
 ### **Returns**
-`token` - string
-The token for which the balances are provided.
-
-`balance` - number
-It is the total balance available for the user corresponding to the specified token.
-
-`available` - number
-It is the available balance for the user corresponding to the specified token.
-
-`locked` - number
+* `token` - string; The token for which the balances are provided.
+* `balance` - number; It is the total balance available for the user corresponding to the specified token.
+* `available` - number; It is the available balance for the user corresponding to the specified token.
+* `locked` - number
 
 #### **Example**
 

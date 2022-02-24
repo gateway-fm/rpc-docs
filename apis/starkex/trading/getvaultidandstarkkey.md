@@ -4,19 +4,12 @@ description: An authenticated endpoint used to retrieve a vaultId and StarkKey
 # Get VaultId And StarkKey
 
 ### **Parameters**
-`token` - string
-The new token for which a new vault Id needs to be allocated.
-
-`address` - string
-The Ethereum public address.
+* `token` - string; The new token for which a new vault Id needs to be allocated.
+* `address` - string; The Ethereum public address.
 
 ### **Returns**
-`vaultId` - number 
-The vault id for the requested vault.
-
-`starkKey` - string
-The Stark public key.
-
+* `vaultId` - number; The vault id for the requested vault.
+* `starkKey` - string; The Stark public key.
 
 #### **Example**
 

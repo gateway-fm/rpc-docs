@@ -7,29 +7,19 @@ description: This method is used to get the history of fills (executed trades) f
 none
 
 ### **Returns**
-`pagination` - object
+* `pagination` - object
+  * `totalItems` - number; Total number of items matching the query
+  * `limit` - number; Limit applied on returned items
+  * `skip` - number; Skip applied on returned items
 
-    `totalItems` - number; Total number of items matching the query
-    
-    `limit` - number; Limit applied on returned items
-    
-    `skip` - number; Skip applied on returned items
-
-`items` - object
-
-`_id` - string; Unique identifier representing this transfer
-
-    `token` - string; Token transfered
-    
-    `amount` - number; Amount transfered (effective amount received by the recipient)
-    
-    `feeAmount` - number; Transfer fee amount (in transfer token units)
-    
-    `source` - string; Source Ethereum address
-    
-    `recipient` - string; Recipient Ethereum address
-    
-    `date` - string; Date and time of the transfer
+* `items` - object
+  * `_id` - string; Unique identifier representing this transfer
+  * `token` - string; Token transfered
+  * `amount` - number; Amount transfered (effective amount received by the recipient)
+  * `feeAmount` - number; Transfer fee amount (in transfer token units)
+  * `source` - string; Source Ethereum address
+  * `recipient` - string; Recipient Ethereum address
+  * `date` - string; Date and time of the transfer
 
 #### **Example**
 

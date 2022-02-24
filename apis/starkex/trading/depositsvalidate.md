@@ -4,27 +4,15 @@ description: An authenticated endpoint used to validate on-chain deposit
 # Validate deposit
 
 ### **Parameters**
-`token` - string.
-The token value to deposit
-
-`amount` - string. 
-Amount to deposit
+* `token` - string; The token value to deposit
+* `amount` - string; Amount to deposit
 
 ### **Returns**
-tokenId 
-string; The tokenId value for deposit.
-
-vaultId
-string; The vault id of account for the token.
-
-starkKey
-string; The Stark public key of the user.
-
-token
-string; The token value to be deposited.
-
-amount
-string; The token amount to be deposited.
+* `tokenId` - string; The tokenId value for deposit.
+* `vaultId` - string; The vault id of account for the token.
+* `starkKey` - string; The Stark public key of the user.
+* `token` - string; The token value to be deposited.
+* `amount` - string; The token amount to be deposited.
 
 #### **Example**
 
