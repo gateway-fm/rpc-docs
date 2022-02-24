@@ -8,32 +8,23 @@ description: This is an authenticated endpoint used to retrieve deposits. A toke
 `token` - string
 
 ### **Returns**
-`ethAddress` - string
-The ethereum public address of the user.
+`ethAddress` - string; The ethereum public address of the user.
 
-`starkKey` - string
-The Stark public key.
+`starkKey` - string; The Stark public key.
 
-`starkVaultId` - number
-The Stark vault ID.
+`starkVaultId` - number; The Stark vault ID.
 
-`starkTokenId` - string
-The Stark token ID.
+`starkTokenId` - string; The Stark token ID.
 
-`token` - string
-The token that was deposited
+`token` - string; The token that was deposited
 
-`amount` - number
-The amount that was deposited.
+`amount` - number; The amount that was deposited.
 
-`createdAt` - string
-The date and time of the deposit.
+`createdAt` - string; The date and time of the deposit.
 
-`isPostedOffchain` - boolean
-Flag to indicate if the deposit was posted off chain.
+`isPostedOffchain` - boolean; Flag to indicate if the deposit was posted off chain.
 
-`isConfirmedOnChain` - boolean
-Flag to indicate if the deposit was confirmed off chain.
+`isConfirmedOnChain` - boolean; Flag to indicate if the deposit was confirmed off chain.
 
 #### **Example**
 

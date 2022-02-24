@@ -4,31 +4,21 @@ description: An authenticated endpoint used to retrieve history of deposits and 
 # Get deposits and withdrawal history
 
 ### **Parameters**
-`skip` - number
-Include/exclude details
+`skip` - number; Include/exclude details
 
-`sortDirection` - string
-Sorting option
+`sortDirection` - string; Sorting option
 
 ### **Returns**
 
-`items` - array
-
-Transaction details
+`items` - array; Transaction details
 
 `pagination` - object
 
-`totalItems` - number
+`totalItems` - number; Total number of items matching the query
 
-Total number of items matching the query
+`limit` - number; Limit applied on returned items
 
-`limit` - number
-
-Limit applied on returned items
-
-`skip` - number
-
-Skip applied on returned items
+`skip` - number; Skip applied on returned items
 
 #### **Example**
 

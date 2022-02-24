@@ -2,6 +2,7 @@
 description: This is endpoint is used to retrieve the details for a specific order using the order ID.
 ---
 # Order
+**NOTE:** only used for debugging swaps that never finished
 
 ### **Parameters**
 `orderId` - string

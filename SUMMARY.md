@@ -6,17 +6,23 @@
 
 * [StarkEx API](apis/starkex/README.md)
   * [Authorization](apis/starkex/authorization.md)
+  * [Deposits](apis/starkex/trading/deposits.md)
+  * [Deposits Validate](apis/starkex/trading/depositsvalidate.md)
+  * [Deposits and Withdrawals](apis/starkex/trading/getdepositsandwithdrawals.md)
   * [Get Balance](apis/starkex/trading/getbalance.md)
   * [Get Config](apis/starkex/trading/getconf.md)
-  * [Get Gas Price](apis/starkex/trading/getgasprice.md)
-  * [Pending Withdrawals](apis/starkex/trading/getpendingwithdrawals.md)
   * [Get User Config](apis/starkex/trading/getuserconf.md)
   * [Get VaultId](apis/starkex/trading/getvaultid.md)
+  * [Get VaultId and Satrk key](apis/starkex/trading/getvaultidandstarkkey.md)
+  * [Order](apis/starkex/trading/getorder.md)
   * [Register](apis/starkex/trading/register.md)
   * [Submit Order](apis/starkex/trading/submitorder.md)
   * [Transfer](apis/starkex/trading/transfer.md)
   * [Fills history](apis/starkex/fills.md)
   * [Transfers History](apis/starkex/transfers.md)
+  * [Fast Withdrawal](apis/starkex/trading/fastwithdrawal.md)
+  * [Fast Withdrawal fee](apis/starkex/trading/fastwithdrawalfee.md)
+  * [VWAP](apis/starkex/market/vwap.md)
 
 [//]: # (* **Market**)
 
@@ -51,13 +57,9 @@
 [//]: # (  * [Deposit History]&#40;apis/starkex/trading/getdeposits.md&#41;)
 
 [//]: # (  * [Get Fee Rate]&#40;apis/starkex/trading/getfeerate.md&#41;)
-
-
-
-[//]: # (  * [Order]&#40;apis/starkex/trading/getorder.md&#41;)
-
+[//]: # (  * [Get Gas Price]&#40;apis/starkex/trading/getgasprice.md&#41;)
 [//]: # (  * [Get Public Permissions]&#40;apis/starkex/trading/getpublicuserpermissions.md&#41;)
-
+[//]: # (  * [Pending Withdrawals]&#40;apis/starkex/trading/getpendingwithdrawals.md&#41;)
 [//]: # (  * [Get Withdrawal]&#40;apis/starkex/trading/getwithdrawal.md&#41;)
 
 [//]: # (  * [All Orders]&#40;apis/starkex/trading/openorders.md&#41;)

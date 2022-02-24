@@ -4,10 +4,38 @@ description: An authenticated endpoint used to withdraw token
 # Fast withdrawal
 
 ### **Parameters**
-
-
+* `recipientEthAddress` - string; Recipient Ethereum address
+* `transactionFee`
+* `tx` - Object
+  * `amount` - number
+  * `fact` - string
+  * `factRegistryAddress` - string
+  * `nonce` - integer
+  * `receiverPublicKey` - string
+  * `receiverVaultId` - integer
+  * `senderVaultId` - integer
+  * `token` - string
+  * `type` - string
+  *  `senderPublicKey` - string
+  * `expirationTimestamp` - integer
+  * `signature` - Object
+    * `r` - string
+    * `s` - string
+* `starkPublicKey` - Object; The Stark public key. Both the "x" and "y" part are required.
+  * `x` - string
+  * `y` - string
+  
 ### **Returns**
-
+* `readyToWithdrawOnChain` - Boolean
+* `token` - string; the token
+* `amount`- number
+* `fastWithdrawalData` - Object
+  * `transactionFee`- number; fee amount
+  * `recipientEthAddress` - string; Recipient Ethereum address
+  * `onChain`-Object
+  * `amount`- number
+* `_id` - string
+* `createdAt`- string; The date and time transfer request was received
 
 #### **Example**
 

@@ -4,12 +4,11 @@ description: Return current withdrawal fee rate for a given token
 # Get Withdrawal Fee rate
 
 ### **Parameters**
-`token` - string.
-Token value to get the fee
-
+`token` - string; Token value to get the fee
 
 ### **Returns**
-TODO
+* `feeBaseUnits` - number
+* `feeQuantised`  - number
 
 #### **Example**
 
