@@ -5,10 +5,12 @@ description: Sends a transaction and immediately returns transaction hash.
 # Send transaction (async)
 
 ### **Parameters**
+
 * `method:` broadcast_tx_async
 * `params:` [SignedTransaction encoded in base64]
 
 ### **Returns**
+
 Sends a transaction and immediately returns transaction hash.
 
 ### **Example**

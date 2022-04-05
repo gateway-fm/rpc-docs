@@ -5,6 +5,7 @@ description: Returns code changes made when deploying a contract.
 # View contract code changes
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_changes
 * `params:`
   * `changes_type:` contract_code_changes
@@ -12,6 +13,7 @@ description: Returns code changes made when deploying a contract.
   * `account_ids:` ["account_id"]
 
 ### **Returns**
+
 Returns code changes made when deploying a contract. Change is returned is a base64 encoded WASM file.
 
 ### **Example**

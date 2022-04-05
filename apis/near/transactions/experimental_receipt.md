@@ -5,11 +5,13 @@ description: Fetches a receipt by it's ID (as is, without a status or execution 
 # Receipt by ID
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_receipt
 * `params:` 
   * `receipt_id`
 
 ### **Returns**
+
 Fetches a receipt by it's ID (as is, without a status or execution outcome)
 
 ### **Example**

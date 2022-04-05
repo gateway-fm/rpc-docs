@@ -1,16 +1,16 @@
 ---
 description: Returns current genesis configuration.
-
-
 ---
 
 # Gas Price
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_genesis_config
 * `params:` none
 
 ### **Returns**
+
 Returns current genesis configuration.
 
 ### **Example**

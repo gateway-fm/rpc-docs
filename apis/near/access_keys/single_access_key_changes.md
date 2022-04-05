@@ -5,6 +5,7 @@ description: Returns individual access key changes in a specific block.
 # View access key changes (single)
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_changes
 * `params:`
   * `changes_type`: single_access_key_changes
@@ -12,6 +13,7 @@ description: Returns individual access key changes in a specific block.
   * `finality` OR `block_id`
 
 ### **Returns**
+
 Returns individual access key changes in a specific block. You can query multiple keys by passing an array of objects containing the account_id and public_key.
 
 ### **Example**

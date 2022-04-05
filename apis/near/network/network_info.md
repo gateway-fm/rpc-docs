@@ -5,10 +5,12 @@ description: Returns the current state of node network connections (active peers
 # Network Info
 
 ### **Parameters**
+
 * `method:` network_info
 * `params:` []
 
 ### **Returns**
+
 Returns the current state of node network connections (active peers, transmitted data, etc.)
 
 ### **Example**

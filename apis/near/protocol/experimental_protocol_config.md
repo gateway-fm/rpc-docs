@@ -5,11 +5,13 @@ description: Returns most recent protocol configuration or a specific queried bl
 # Protocol Config
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_protocol_config
 * `params:` 
   * `finality` OR `block_id`
 
 ### **Returns**
+
 Returns most recent protocol configuration or a specific queried block. Useful for finding current storage and transaction costs.
 
 ### **Example**

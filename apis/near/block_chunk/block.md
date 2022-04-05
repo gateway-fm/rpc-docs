@@ -5,11 +5,13 @@ description: Queries network and returns block for given height or hash.
 # Block details
 
 ### **Parameters**
+
 * `method:` block
 * `params:`
   * `finality` OR `block_id`
 
 ### **Returns**
+
 Queries network and returns block for given height or hash. You can also use finality param to return latest block details.
 
 ### **Example**

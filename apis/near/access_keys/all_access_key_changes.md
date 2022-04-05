@@ -5,6 +5,7 @@ description: Returns changes to all access keys of a specific block.
 # View access key changes (all)
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_changes
 * `params:`
   * `changes_type`: all_access_key_changes
@@ -12,6 +13,7 @@ description: Returns changes to all access keys of a specific block.
   * `finality` OR `block_id`
 
 ### **Returns**
+
 Returns changes to all access keys of a specific block. Multiple accounts can be quereied by passing an array of account_ids.
 
 ### **Example**

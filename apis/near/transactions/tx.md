@@ -5,12 +5,14 @@ description: Queries status of a transaction by hash and returns the final trans
 # Transaction Status
 
 ### **Parameters**
+
 * `method:` tx
 * `params:` 
   * `transaction hash` 
   * `sender account id`
 
 ### **Returns**
+
 Queries status of a transaction by hash and returns the final transaction result.
 
 ### **Example**
