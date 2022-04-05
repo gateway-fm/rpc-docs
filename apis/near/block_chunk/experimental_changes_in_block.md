@@ -1,16 +1,17 @@
 ---
-description: Returns changes in block for given block height or hash. 
-
+description: Returns changes in block for given block height or hash.
 ---
 
 # Changes in Block
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_changes_in_block
 * `params:`
   * `finality` OR `block_id`
 
 ### **Returns**
+
 Returns changes in block for given block height or hash. You can also use finality param to return latest block details.
 
 ### **Example**

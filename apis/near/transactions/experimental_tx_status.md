@@ -5,12 +5,14 @@ description: Queries status of a transaction by hash, returning the final transa
 # Transaction Status with Receipts
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_tx_status
 * `params:` 
   * `transaction hash` 
   * `sender account id`
 
 ### **Returns**
+
 Queries status of a transaction by hash, returning the final transaction result and details of all receipts.
 
 ### **Example**

@@ -5,6 +5,7 @@ description: Allows you to call a contract method as a view function.
 # Call a contract function
 
 ### **Parameters**
+
 * `method:` query
 * `params:`
   * `request_type:` call_function
@@ -14,6 +15,7 @@ description: Allows you to call a contract method as a view function.
   * `args_base64`: method_arguments_base_64_encoded
 
 ### **Returns**
+
 Allows you to call a contract method as a view function.
 
 

@@ -5,10 +5,12 @@ description: Returns general status of a given node (sync status, nearcore node 
 # Node Status
 
 ### **Parameters**
+
 * `method:` status
 * `params:` []
 
 ### **Returns**
+
 Returns general status of a given node (sync status, nearcore node version, protocol version, etc), and the current set of validators.
 
 ### **Example**

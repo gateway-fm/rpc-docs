@@ -5,6 +5,7 @@ description: Returns the state (key value pairs) of a contract based on the key 
 # View contract state
 
 ### **Parameters**
+
 * `method:` query
 * `params:`
   * `request_type:` view_state
@@ -13,6 +14,7 @@ description: Returns the state (key value pairs) of a contract based on the key 
   * `prefix_base64`: ""
   
 ### **Returns**
+
 Returns the state (key value pairs) of a contract based on the key prefix (base64 encoded). Pass an empty string for prefix_base64 if you would like to return the entire state. Please note that the returned state will be base64 encoded as well.
 
 

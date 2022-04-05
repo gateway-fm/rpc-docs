@@ -5,11 +5,13 @@ description: Queries active validators on the network returning details and the 
 # Validation Status
 
 ### **Parameters**
+
 * `method:` validators
 * `params:`
   * `["block hash"]`, `[block number]`, or `[null]` for the latest block
 
 ### **Returns**
+
 Queries active validators on the network returning details and the state of validation on the blockchain.
 
 ### **Example**

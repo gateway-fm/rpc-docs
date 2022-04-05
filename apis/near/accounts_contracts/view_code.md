@@ -5,6 +5,7 @@ description: Returns the contract code (Wasm binary) deployed to the account.
 # View contract code
 
 ### **Parameters**
+
 * `method:` query
 * `params:`
   * `request_type:` view_code
@@ -12,6 +13,7 @@ description: Returns the contract code (Wasm binary) deployed to the account.
   * `account_id:` string, account id
   
 ### **Returns**
+
 Returns the contract code (Wasm binary) deployed to the account. Please note that the returned code will be encoded in base64.
 
 

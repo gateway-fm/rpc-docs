@@ -1,16 +1,17 @@
 ---
 description: Returns details of a specific chunk.
-
 ---
 
 # Chunk Details
 
 ### **Parameters**
+
 * `method:` chunk
 * `params:`
   * `chunk_id` OR `block_id`, `shard_id`
 
 ### **Returns**
+
 Returns details of a specific chunk. You can run a block details query to get a valid chunk hash.
 
 ### **Example**

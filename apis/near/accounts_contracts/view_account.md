@@ -5,6 +5,7 @@ description: Returns basic account information
 # View account
 
 ### **Parameters**
+
 * `method:` query
 * `params:`
   * `request_type:` view_account
@@ -13,8 +14,8 @@ description: Returns basic account information
   
 
 ### **Returns**
-Returns basic account information
 
+Returns basic account information
 
 ### **Example**
 

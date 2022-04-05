@@ -5,7 +5,8 @@ description: Returns information about a single access key for given account.
 # View access key
 
 ### **Parameters**
-* `method:` query
+
+* `method:`query
 * `params:`
   * `request_type:` view_access_key
   * `finality` OR `block_id`
@@ -13,8 +14,8 @@ description: Returns information about a single access key for given account.
   * `public_key:` string, accound id's publick key 
 
 ### **Returns**
-Returns information about a single access key for given account.
-If permission of the key is FunctionCall, it will return more details such as the allowance, receiver_id, and method_names.
+
+Returns information about a single access key for given account. If permission of the key is FunctionCall, it will return more details such as the allowance, receiver_id, and method_names.
 
 ### **Example**
 

@@ -5,11 +5,13 @@ description: Returns gas price for a specific block_height or block_hash.
 # Gas Price
 
 ### **Parameters**
+
 * `method:` gas_price
 * `params:`
   * `[block_height]`, `["block_hash"]`, or `[null]`
 
 ### **Returns**
+
 Returns gas price for a specific block_height or block_hash. Using [null] will return the most recent block's gas price.
 
 ### **Example**

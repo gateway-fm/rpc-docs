@@ -5,10 +5,12 @@ description: Sends a transaction and waits until transaction is fully complete.
 # Send transaction (await)
 
 ### **Parameters**
+
 * `method:` broadcast_tx_commit
 * `params:` [SignedTransaction encoded in base64]
 
 ### **Returns**
+
 Sends a transaction and waits until transaction is fully complete. (Has a 10 second timeout)
 
 ### **Example**

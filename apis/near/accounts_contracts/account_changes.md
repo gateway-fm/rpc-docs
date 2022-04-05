@@ -5,6 +5,7 @@ description: Returns account changes from transactions in a given account.
 # View access key changes (single)
 
 ### **Parameters**
+
 * `method:` EXPERIMENTAL_changes
 * `params:`
   * `changes_type`: account_changes
@@ -12,6 +13,7 @@ description: Returns account changes from transactions in a given account.
   * `finality` OR `block_id`
   
 ### **Returns**
+
 Returns account changes from transactions in a given account.
 
 ### **Example**
