@@ -118,6 +118,9 @@
   * [web3_clientversion](apis/ethereum/web3_clientversion.md)
 
 * **  **
+* [Fantom API](apis/fantom/README.md)
+
+* **  **
 * [NEAR API](apis/near/README.md)
   * [all_access_key_changes](apis/near/access_keys/all_access_key_changes.md)
   * [single_access_key_changes](apis/near/access_keys/single_access_key_changes.md)
