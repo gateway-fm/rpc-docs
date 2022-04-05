@@ -12,11 +12,10 @@ description: Returns the state (key value pairs) of a contract based on the key 
   * `finality` OR `block_id`
   * `account_id:` string, account id
   * `prefix_base64`: ""
-  
+
 ### **Returns**
 
 Returns the state (key value pairs) of a contract based on the key prefix (base64 encoded). Pass an empty string for prefix_base64 if you would like to return the entire state. Please note that the returned state will be base64 encoded as well.
-
 
 ### **Example**
 

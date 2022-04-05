@@ -11,11 +11,10 @@ description: Returns the contract code (Wasm binary) deployed to the account.
   * `request_type:` view_code
   * `finality` OR `block_id`
   * `account_id:` string, account id
-  
+
 ### **Returns**
 
 Returns the contract code (Wasm binary) deployed to the account. Please note that the returned code will be encoded in base64.
-
 
 ### **Example**
 

@@ -11,7 +11,6 @@ description: Returns basic account information
   * `request_type:` view_account
   * `finality` OR `block_id`
   * `account_id:` string, account id
-  
 
 ### **Returns**
 

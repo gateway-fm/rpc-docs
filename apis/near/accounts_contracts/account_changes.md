@@ -11,7 +11,7 @@ description: Returns account changes from transactions in a given account.
   * `changes_type`: account_changes
   * `account_ids`: array, ["account_id"]
   * `finality` OR `block_id`
-  
+
 ### **Returns**
 
 Returns account changes from transactions in a given account.

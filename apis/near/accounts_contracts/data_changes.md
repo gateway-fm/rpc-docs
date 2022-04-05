@@ -12,7 +12,7 @@ description: Returns the state change details of a contract based on the key pre
   * `finality` OR `block_id`
   * `account_ids:` ["account_id"]
   * `key_prefix_base64`: "base64 encoded key value"
-  
+
 ### **Returns**
 
 Returns the state change details of a contract based on the key prefix (encoded to base64). Pass an empty string for this param if you would like to return all state changes.

@@ -16,6 +16,7 @@ Sends a transaction and immediately returns transaction hash.
 ### **Example**
 
 Request
+
 ```bash
 curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
 -X POST \

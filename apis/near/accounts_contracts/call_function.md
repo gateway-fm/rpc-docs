@@ -18,7 +18,6 @@ description: Allows you to call a contract method as a view function.
 
 Allows you to call a contract method as a view function.
 
-
 ### **Example**
 
 Request
