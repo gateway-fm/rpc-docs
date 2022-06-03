@@ -5,7 +5,7 @@ description: Fantom RPC
 
 all Ethereum methods are available for Fantom. Please refer to [Ethereum API](../ethereum/README.md)
 
-https://rpc.<REGION>.gateway.fm/v1/fantom/non-archival/<mainnet|testnet>
+https://rpc.`<REGION>`.gateway.fm/v1/fantom/non-archival/<mainnet|testnet>
 
 Now Fantom API is available in regions:
 

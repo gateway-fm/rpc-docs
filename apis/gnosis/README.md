@@ -7,7 +7,7 @@ description: >-
 # Gnosis API
 Gateway.fm provides public Gnosis RPC in the Asia region
 
-so this common url https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet 
+so this common url https://rpc.`<REGION>`.gateway.fm/v1/gnosis/non-archival/mainnet 
 
 should be substitute by
 https://rpc.ap-southeast-1.gateway.fm/v1/gnosis/non-archival/mainnet

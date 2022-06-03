@@ -5,7 +5,8 @@ description: >-
 ---
 
 # Ethereum API
-https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/<mainnet|rinkeby>
+
+https://rpc.`<REGION>`.gateway.fm/v1/ethereum/archival/<mainnet|rinkeby>
 
 Now Ethereum API is available in regions:
 

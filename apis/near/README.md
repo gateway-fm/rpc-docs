@@ -6,7 +6,7 @@ description: NEAR RPC
 Below you will find the api documentation for the standard NEAR JSON-RPC calls that Gateway supports.
 
 
-https://rpc.<REGION>.gateway.fm/v1/near/non-archival/<mainnet|testnet>
+https://rpc.`<REGION>`.gateway.fm/v1/near/non-archival/<mainnet|testnet>
 
 Now NEAR API is available in regions:
 
