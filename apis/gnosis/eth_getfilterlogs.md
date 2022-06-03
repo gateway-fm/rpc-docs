@@ -29,9 +29,8 @@ See [`eth_getFilterChanges`](./#eth_getfilterchanges)
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
 -X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":74}'
 ```

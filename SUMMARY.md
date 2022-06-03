@@ -48,8 +48,7 @@
 
 [//]: # (  * [User User 24-hours volume]&#40;apis/starkex/market/user24hoursvolume.md&#41;)
 
-######  **Trading**
-
+[//]: # (######  **Trading**)
 [//]: # (  * [Cancel Order]&#40;apis/starkex/trading/cancelorder.md&#41;)
 
 [//]: # (  * [Cancel Withdrawal]&#40;apis/starkex/trading/cancelwithdrawal.md&#41;)
@@ -75,13 +74,12 @@
 [//]: # (* **  **)
 
 * **  **
+*
 * [Ethereum API](apis/ethereum/README.md)
-  * [eth_accounts](apis/ethereum/eth_accounts.md)
   * [eth_blocknumber](apis/ethereum/eth_blocknumber.md)
   * [eth_call](apis/ethereum/eth_call.md)
   * [eth_chainid](apis/ethereum/eth_chainid.md)
   * [eth_estimategas](apis/ethereum/eth_estimategas.md)
-  * [eth_feehistory](apis/ethereum/eth_feehistory.md)
   * [eth_gasprice](apis/ethereum/eth_gasprice.md)
   * [eth_getbalance](apis/ethereum/eth_getbalance.md)
   * [eth_getblockbyhash](apis/ethereum/eth_getblockbyhash.md)
@@ -89,10 +87,8 @@
   * [eth_getblocktransactioncountbyhash](apis/ethereum/eth_getblocktransactioncountbyhash.md)
   * [eth_getblocktransactioncountbynumber](apis/ethereum/eth_getblocktransactioncountbynumber.md)
   * [eth_getcode](apis/ethereum/eth_getcode.md)
-  * [eth_getfilterchanges](apis/ethereum/eth_getfilterchanges.md)
   * [eth_getfilterlogs](apis/ethereum/eth_getfilterlogs.md)
   * [eth_getlogs](apis/ethereum/eth_getlogs.md)
-  * [eth_getproof](apis/ethereum/eth_getproof.md)
   * [eth_getstorageat](apis/ethereum/eth_getstorageat.md)
   * [eth_gettransactionbyblockhashandindex](apis/ethereum/eth_gettransactionbyblockhashandindex.md)
   * [eth_gettransactionbyblocknumberandindex](apis/ethereum/eth_gettransactionbyblocknumberandindex.md)
@@ -103,22 +99,43 @@
   * [eth_getunclebyblocknumberandindex](apis/ethereum/eth_getunclebyblocknumberandindex.md)
   * [eth_getunclecountbyblockhash](apis/ethereum/eth_getunclecountbyblockhash.md)
   * [eth_getunclecountbyblocknumber](apis/ethereum/eth_getunclecountbyblocknumber.md)
-  * [eth_getwork](apis/ethereum/eth_getwork.md)
-  * [eth_mining](apis/ethereum/eth_mining.md)
-  * [eth_newblockfilter](apis/ethereum/eth_newblockfilter.md)
-  * [eth_newfilter](apis/ethereum/eth_newfilter.md)
-  * [eth_newpendingtransactionfilter](apis/ethereum/eth_newpendingtransactionfilter.md)
   * [eth_protocolversion](apis/ethereum/eth_protocolversion.md)
   * [eth_sendrawtransaction](apis/ethereum/eth_sendrawtransaction.md)
   * [eth_syncing](apis/ethereum/eth_syncing.md)
-  * [eth_uninstallfilter](apis/ethereum/eth_uninstallfilter.md)
-  * [net_listening](apis/ethereum/net_listening.md)
-  * [net_peercount](apis/ethereum/net_peercount.md)
   * [net_version](apis/ethereum/net_version.md)
   * [web3_clientversion](apis/ethereum/web3_clientversion.md)
 
 * **  **
 * [Fantom API](apis/fantom/README.md)
+
+* [Gnosis API](apis/gnosis/README.md)
+  * [eth_blocknumber](apis/gnosis/eth_blocknumber.md)
+  * [eth_call](apis/gnosis/eth_call.md)
+  * [eth_chainid](apis/gnosis/eth_chainid.md)
+  * [eth_estimategas](apis/gnosis/eth_estimategas.md)
+  * [eth_gasprice](apis/gnosis/eth_gasprice.md)
+  * [eth_getbalance](apis/gnosis/eth_getbalance.md)
+  * [eth_getblockbyhash](apis/gnosis/eth_getblockbyhash.md)
+  * [eth_getblockbynumber](apis/gnosis/eth_getblockbynumber.md)
+  * [eth_getblocktransactioncountbyhash](apis/gnosis/eth_getblocktransactioncountbyhash.md)
+  * [eth_getblocktransactioncountbynumber](apis/gnosis/eth_getblocktransactioncountbynumber.md)
+  * [eth_getcode](apis/gnosis/eth_getcode.md)
+  * [eth_getfilterlogs](apis/gnosis/eth_getfilterlogs.md)
+  * [eth_getlogs](apis/gnosis/eth_getlogs.md)
+  * [eth_getstorageat](apis/gnosis/eth_getstorageat.md)
+  * [eth_gettransactionbyblockhashandindex](apis/gnosis/eth_gettransactionbyblockhashandindex.md)
+  * [eth_gettransactionbyblocknumberandindex](apis/gnosis/eth_gettransactionbyblocknumberandindex.md)
+  * [eth_gettransactionbyhash](apis/gnosis/eth_gettransactionbyhash.md)
+  * [eth_gettransactioncount](apis/gnosis/eth_gettransactioncount.md)
+  * [eth_gettransactionreceipt](apis/gnosis/eth_gettransactionreceipt.md)
+  * [eth_getunclebyblockhashandindex](apis/gnosis/eth_getunclebyblockhashandindex.md)
+  * [eth_getunclebyblocknumberandindex](apis/gnosis/eth_getunclebyblocknumberandindex.md)
+  * [eth_getunclecountbyblockhash](apis/gnosis/eth_getunclecountbyblockhash.md)
+  * [eth_getunclecountbyblocknumber](apis/gnosis/eth_getunclecountbyblocknumber.md)
+  * [eth_protocolversion](apis/gnosis/eth_protocolversion.md)
+  * [eth_sendrawtransaction](apis/gnosis/eth_sendrawtransaction.md)
+  * [eth_syncing](apis/gnosis/eth_syncing.md)
+  * [net_version](apis/gnosis/net_version.md)
 
 * **  **
 * [NEAR API](apis/near/README.md)

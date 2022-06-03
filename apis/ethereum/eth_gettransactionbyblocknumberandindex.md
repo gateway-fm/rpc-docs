@@ -14,7 +14,7 @@ description: >-
 
 ### Returns
 
-See [`eth_getTransactionByHash`](./#eth_gettransactionbyhash)\`\`
+See [`eth_getTransactionByHash`](./#eth_gettransactionbyhash)
 
 ### **Example**
 
