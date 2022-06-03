@@ -36,7 +36,7 @@ contract Storage {
 Retrieving the value of `pos0` is straight forward:
 
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

@@ -24,7 +24,7 @@ description: Returns a collection of historical gas information
 Request
 
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/archival/rinkeby \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
