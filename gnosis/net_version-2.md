@@ -1,14 +1,10 @@
 ---
-description: Returns traces created at given block.
+description: Executes the given call and returns a number of possible traces for it.
 ---
 
 # trace\_call
 
 #### **Parameters**
-
-``
-
-Parameters:
 
 `object` - The transaction object, which contains of
 
