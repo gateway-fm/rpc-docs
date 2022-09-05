@@ -1,11 +1,11 @@
 ---
-description:
-  Returns the information about a transaction requested by transaction hash. 
-  In the response object, `blockHash`, `blockNumber`, and `transactionIndex` are
+description: >-
+  Returns the information about a transaction requested by transaction hash. In
+  the response object, `blockHash`, `blockNumber`, and `transactionIndex` are
   `null` when the transaction is pending.
 ---
 
-# eth\_getTransactionByHash
+# eth\_gettransactionbyhash
 
 ### Parameters
 
@@ -34,7 +34,7 @@ description:
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
@@ -66,4 +66,3 @@ Result
     }
 }
 ```
-

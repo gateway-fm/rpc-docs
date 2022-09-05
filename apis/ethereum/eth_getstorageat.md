@@ -5,7 +5,7 @@ description: >-
   via the contract's methods.
 ---
 
-# eth\_getStorageAt
+# eth\_getstorageat
 
 ## Parameters
 
@@ -36,7 +36,7 @@ contract Storage {
 Retrieving the value of `pos0` is straight forward:
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

@@ -2,7 +2,7 @@
 description: Returns information about a block by hash.
 ---
 
-# eth\_getBlockByHash
+# eth\_getblockbyhash
 
 ### Parameters
 
@@ -32,11 +32,12 @@ description: Returns information about a block by hash.
   * `transactions`: Array - Array of transaction objects, or 32 Bytes transaction hashes depending on the last given parameter.
   * `uncles`: Array - Array of uncle hashes.
 
-### 
+###
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
@@ -92,4 +93,3 @@ Result
     }
 }
 ```
-

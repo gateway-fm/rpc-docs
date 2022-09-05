@@ -13,7 +13,7 @@ This is one of the most commonly used API calls. It is used to read from the blo
 * `Object` - The transaction call object
   * `from`: `DATA`, 20 Bytes - (optional) The address the transaction is sent from.
   * `to`: `DATA`, 20 Bytes - The address the transaction is directed to.
-  * `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. `eth_call` consumes zero gas, but this parameter may be needed by some executions. **NOTE: this parameter does not have limit or cap. **
+  * `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. `eth_call` consumes zero gas, but this parameter may be needed by some executions. \*\*NOTE: this parameter does not have limit or cap. \*\*
   * `gasPrice`: `QUANTITY` - (optional) Integer of the gasPrice used for each paid gas.
   * `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction
   * `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI](https://docs.soliditylang.org/en/v0.7.0/abi-spec.html)
@@ -28,7 +28,7 @@ This is one of the most commonly used API calls. It is used to read from the blo
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
@@ -45,8 +45,8 @@ Result
 }
 ```
 
-`eth_call`will check the balance of the sender to make sure that the sender has enough gas to complete the request.
-Example of response when `from` doesn't have enough funds:
+`eth_call`will check the balance of the sender to make sure that the sender has enough gas to complete the request. Example of response when `from` doesn't have enough funds:
+
 ```javascript
 {
   "jsonrpc": "2.0",
@@ -57,4 +57,3 @@ Example of response when `from` doesn't have enough funds:
   }
 }
 ```
-

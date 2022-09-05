@@ -2,7 +2,7 @@
 description: Returns the number of transactions in a block matching the given block hash.
 ---
 
-# eth\_getBlockTransactionCountByHash
+# eth\_getblocktransactioncountbyhash
 
 ### Parameters
 
@@ -13,10 +13,11 @@ description: Returns the number of transactions in a block matching the given bl
 `QUANTITY` - integer of the number of transactions in this block.
 
 ### **Example**
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
@@ -32,4 +33,3 @@ Result
     "result": "0x2c"
 }
 ```
-

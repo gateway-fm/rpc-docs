@@ -2,7 +2,7 @@
 description: Returns the current client version.
 ---
 
-# web3\_clientVersion
+# web3\_clientversion
 
 ### **Parameters**
 
@@ -17,13 +17,12 @@ none
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":71}'
 ```
-
 
 Result
 

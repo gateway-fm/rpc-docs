@@ -4,7 +4,7 @@ description: >-
   position.
 ---
 
-# eth_getUncleByBlockNumberAndIndex
+# eth\_getunclebyblocknumberandindex
 
 ### Parameters
 
@@ -13,21 +13,21 @@ description: >-
 
 ### Returns
 
-See [`eth_getBlockByHash`](./#eth_getblockbyhash)
+See [`eth_getBlockByHash`](./#eth\_getblockbyhash)
 
 ### **Example**
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -d '{"id": 89,"jsonrpc": "2.0","method": "eth_getUncleByBlockNumberAndIndex","params": ["0xEF428","0x0"]}'
 ```
 
-Result 
+Result
 
 ```javascript
 {

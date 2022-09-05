@@ -2,7 +2,7 @@
 description: Returns the current network id.
 ---
 
-# net_version
+# net\_version
 
 #### **Parameters**
 
@@ -12,22 +12,20 @@ none
 
 `String` - The current network id.
 
-`"1"`: Ethereum Mainnet
-`"2"`: Morden Testnet (deprecated)
-`"3"`: Ropsten Testnet
-`"4"`: Rinkeby Testnet
-`"42"`: Kovan Testnet
+`"1"`: Ethereum Mainnet `"2"`: Morden Testnet (deprecated) `"3"`: Ropsten Testnet `"4"`: Rinkeby Testnet `"42"`: Kovan Testnet
 
 ### **Example**
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -d '{ "id": 89, "jsonrpc": "2.0", "method": "net_version", "params": []}'
 ```
+
 Result
 
 ```javascript

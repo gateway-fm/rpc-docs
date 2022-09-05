@@ -2,7 +2,7 @@
 description: Returns the receipt of a transaction by transaction hash.
 ---
 
-# eth_getTransactionReceipt
+# eth\_gettransactionreceipt
 
 **Note:** the receipt is not available for pending transactions.
 
@@ -26,6 +26,7 @@ description: Returns the receipt of a transaction by transaction hash.
   * `logsBloom`: `DATA`, 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.
 
 It also returns either:
+
 * `root` : `DATA` 32 bytes of post-transaction stateroot (pre Byzantium)
 * `status`: `QUANTITY` either 1 (success) or 0 (failure)
 
@@ -34,7 +35,7 @@ It also returns either:
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

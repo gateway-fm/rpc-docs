@@ -2,7 +2,7 @@
 description: Returns the number of transactions sent from an address.
 ---
 
-# eth\_getTransactionCount
+# eth\_gettransactioncount
 
 ### Parameters
 
@@ -18,13 +18,12 @@ description: Returns the number of transactions sent from an address.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0xEA674fdDe714fd979de3EdF0F56AA9716B898ec8","latest"],"id":13}'
 ```
-
 
 Result
 
@@ -35,4 +34,3 @@ Result
     "result": "0x26738a9"
 }
 ```
-

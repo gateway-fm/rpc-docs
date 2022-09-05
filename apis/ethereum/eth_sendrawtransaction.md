@@ -4,7 +4,7 @@ description: >-
   transactions.
 ---
 
-# eth_sendRawTransaction
+# eth\_sendrawtransaction
 
 Gateway does not store keys, so transactions sent via Gateway must be signed ahead of time using another provider like [ethers](https://docs.ethers.io/v5/api/signer/) (via `eth_signTransaction`) and sent with `eth_sendRawTransaction`.
 
@@ -21,7 +21,7 @@ Gateway does not store keys, so transactions sent via Gateway must be signed ahe
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

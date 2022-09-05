@@ -2,7 +2,7 @@
 description: Returns the current price per gas in wei.
 ---
 
-# eth_gasPrice
+# eth\_gasprice
 
 ### Parameters
 
@@ -17,7 +17,7 @@ none
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

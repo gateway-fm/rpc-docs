@@ -4,12 +4,12 @@ description: >-
   same results with an eth_getLogs call (see hint below).
 ---
 
-# eth_getFilterLogs
+# eth\_getfilterlogs
 
 {% hint style="warning" %}
-This method only works for filters creates with [`eth_newFilter`](./#eth_newfilter)not for filters created using [`eth_newBlockFilter`](./#eth_newblockfilter) or [`eth_newPendingTransactionFilter`](./#eth_newpendingtransactionfilter), which will return `"filter not found".`
+This method only works for filters creates with [`eth_newFilter`](./#eth\_newfilter)not for filters created using [`eth_newBlockFilter`](./#eth\_newblockfilter) or [`eth_newPendingTransactionFilter`](./#eth\_newpendingtransactionfilter), which will return `"filter not found".`
 
-### eth_getLogs vs. eth_getFilterLogs
+#### eth\_getLogs vs. eth\_getFilterLogs
 
 These two computations will return the same results:
 
@@ -23,13 +23,14 @@ These two computations will return the same results:
 
 ### **Returns**
 
-See [`eth_getFilterChanges`](./#eth_getfilterchanges)
+See [`eth_getFilterChanges`](./#eth\_getfilterchanges)
 
 ### **Example**
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
