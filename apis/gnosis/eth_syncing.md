@@ -1,6 +1,5 @@
 ---
-description: 
-  Returns an object with data about the sync status or false.
+description: Returns an object with data about the sync status or false.
 ---
 
 # eth_syncing
@@ -15,16 +14,16 @@ none
 
 `Object|Boolean`, An object with sync status data or `FALSE`, when not syncing:
 
-* `startingBlock`: `QUANTITY` - The block at which the import started (will only be reset, after the sync reached his head)
-* `currentBlock`: `QUANTITY` - The current block, same as eth_blockNumber
-* `highestBlock`: `QUANTITY` - The estimated highest block
+- `startingBlock`: `QUANTITY` - The block at which the import started (will only be reset, after the sync reached his head)
+- `currentBlock`: `QUANTITY` - The current block, same as eth_blockNumber
+- `highestBlock`: `QUANTITY` - The estimated highest block
 
 ### **Example**
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":71}'

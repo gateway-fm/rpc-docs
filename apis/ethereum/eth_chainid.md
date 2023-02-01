@@ -4,7 +4,7 @@ description: >-
   transaction signing as introduced by EIP-155.
 ---
 
-# eth\_chainid
+# eth_chainid
 
 ### **Parameters**
 
@@ -19,7 +19,7 @@ None.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

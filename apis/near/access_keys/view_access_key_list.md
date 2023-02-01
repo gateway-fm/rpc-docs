@@ -6,11 +6,11 @@ description: Returns all access keys for a given account.
 
 ### **Parameters**
 
-* `method:` query
-* `params:`
-  * `request_type:` view_access_key_list
-  * `finality` OR `block_id`
-  * `account_id:` string, account id
+- `method:` query
+- `params:`
+  - `request_type:` view_access_key_list
+  - `finality` OR `block_id`
+  - `account_id:` string, account id
 
 ### **Returns**
 
@@ -21,7 +21,7 @@ Returns all access keys for a given account.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

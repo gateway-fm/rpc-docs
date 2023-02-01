@@ -6,11 +6,11 @@ description: Returns account changes from transactions in a given account.
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_changes
-* `params:`
-  * `changes_type`: account_changes
-  * `account_ids`: array, ["account_id"]
-  * `finality` OR `block_id`
+- `method:` EXPERIMENTAL_changes
+- `params:`
+  - `changes_type`: account_changes
+  - `account_ids`: array, ["account_id"]
+  - `finality` OR `block_id`
 
 ### **Returns**
 
@@ -21,7 +21,7 @@ Returns account changes from transactions in a given account.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

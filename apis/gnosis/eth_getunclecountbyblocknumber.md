@@ -2,7 +2,7 @@
 description: Returns the number of uncles in a block matching the give block number.
 ---
 
-# eth\_getUncleCountByBlockNumber
+# eth_getUncleCountByBlockNumber
 
 ### Parameters
 
@@ -17,7 +17,7 @@ description: Returns the number of uncles in a block matching the give block num
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0x29c"],"id":1}'
@@ -32,4 +32,3 @@ Result
     "result": null
 }
 ```
-

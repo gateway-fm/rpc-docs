@@ -5,13 +5,13 @@ description: >-
   via the contract's methods.
 ---
 
-# eth\_getStorageAt
+# eth_getStorageAt
 
 ## Parameters
 
-* `DATA`, 20 Bytes - address of the storage.
-* `QUANTITY` - integer of the position in the storage.
-* `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
+- `DATA`, 20 Bytes - address of the storage.
+- `QUANTITY` - integer of the position in the storage.
+- `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
 ## Returns
 
@@ -36,7 +36,7 @@ contract Storage {
 Retrieving the value of `pos0` is straight forward:
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x75Df5AF045d91108662D8080fD1FEFAd6aA0bb59", "0x0", "latest"], "id": 1}'
@@ -61,7 +61,12 @@ keccack(LeftPad32(key, 0), LeftPad32(map position, 0))
 This means to retrieve the storage on `pos1[“0x391694e7e0b0cce554cb130d723a9d27458f9298”]` we need to calculate the position with:
 
 ```javascript
-keccak(decodeHex("000000000000000000000000391694e7e0b0cce554cb130d723a9d27458f9298" + "0000000000000000000000000000000000000000000000000000000000000001"))
+keccak(
+  decodeHex(
+    "000000000000000000000000391694e7e0b0cce554cb130d723a9d27458f9298" +
+      "0000000000000000000000000000000000000000000000000000000000000001",
+  ),
+);
 ```
 
 The geth console which comes with the web3 library can be used to make the calculation:
@@ -76,7 +81,7 @@ undefined
 Now to fetch the storage:
 
 ```bash
-curl https://rpc.gateway.fm/v1/ethereum/mainnet \
+curl https://rpc.gateway.fm/v4/ethereum/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

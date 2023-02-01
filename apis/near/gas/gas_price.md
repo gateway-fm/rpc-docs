@@ -6,9 +6,9 @@ description: Returns gas price for a specific block_height or block_hash.
 
 ### **Parameters**
 
-* `method:` gas_price
-* `params:`
-  * `[block_height]`, `["block_hash"]`, or `[null]`
+- `method:` gas_price
+- `params:`
+  - `[block_height]`, `["block_hash"]`, or `[null]`
 
 ### **Returns**
 
@@ -19,7 +19,7 @@ Returns gas price for a specific block_height or block_hash. Using [null] will r
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

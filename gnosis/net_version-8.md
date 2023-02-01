@@ -2,7 +2,7 @@
 description: Returns all traces of given transaction
 ---
 
-# trace\_transaction
+# trace_transaction
 
 #### **Parameters**
 
@@ -19,7 +19,7 @@ description: Returns all traces of given transaction
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"method":"trace_transaction","params":["0x17104ac9d3312d8c136b7f44d4b8b47852618065ebfa534bd2d3b5ef218ca1f3"],"id":1,"jsonrpc":"2.0"}'

@@ -6,8 +6,8 @@ description: Returns the current state of node network connections (active peers
 
 ### **Parameters**
 
-* `method:` network_info
-* `params:` []
+- `method:` network_info
+- `params:` []
 
 ### **Returns**
 
@@ -18,7 +18,7 @@ Returns the current state of node network connections (active peers, transmitted
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

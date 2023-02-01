@@ -6,9 +6,9 @@ description: Queries active validators on the network returning details and the 
 
 ### **Parameters**
 
-* `method:` validators
-* `params:`
-  * `["block hash"]`, `[block number]`, or `[null]` for the latest block
+- `method:` validators
+- `params:`
+  - `["block hash"]`, `[block number]`, or `[null]` for the latest block
 
 ### **Returns**
 
@@ -19,7 +19,7 @@ Queries active validators on the network returning details and the state of vali
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \
@@ -32,7 +32,7 @@ curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
 ```
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

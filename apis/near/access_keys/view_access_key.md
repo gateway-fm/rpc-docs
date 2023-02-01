@@ -6,12 +6,12 @@ description: Returns information about a single access key for given account.
 
 ### **Parameters**
 
-* `method:`query
-* `params:`
-  * `request_type:` view_access_key
-  * `finality` OR `block_id`
-  * `account_id:` string, account id
-  * `public_key:` string, accound id's publick key 
+- `method:`query
+- `params:`
+  - `request_type:` view_access_key
+  - `finality` OR `block_id`
+  - `account_id:` string, account id
+  - `public_key:` string, accound id's publick key
 
 ### **Returns**
 
@@ -22,7 +22,7 @@ Returns information about a single access key for given account. If permission o
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

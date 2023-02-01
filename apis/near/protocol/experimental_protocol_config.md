@@ -1,14 +1,14 @@
 ---
-description: Returns most recent protocol configuration or a specific queried block. 
+description: Returns most recent protocol configuration or a specific queried block.
 ---
 
 # Protocol Config
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_protocol_config
-* `params:` 
-  * `finality` OR `block_id`
+- `method:` EXPERIMENTAL_protocol_config
+- `params:`
+  - `finality` OR `block_id`
 
 ### **Returns**
 
@@ -19,7 +19,7 @@ Returns most recent protocol configuration or a specific queried block. Useful f
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

@@ -4,23 +4,23 @@ description: >-
   position.
 ---
 
-# eth\_gettransactionbyblockhashandindex
+# eth_gettransactionbyblockhashandindex
 
 ### Parameters
 
-* `DATA`, 32 Bytes - hash of a block.
-* `QUANTITY` - integer of the transaction index position.
+- `DATA`, 32 Bytes - hash of a block.
+- `QUANTITY` - integer of the transaction index position.
 
 ### Returns
 
-See [`eth_getTransactionByHash`](./#eth\_gettransactionbyhash)
+See [`eth_getTransactionByHash`](./#eth_gettransactionbyhash)
 
 ### **Example**
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

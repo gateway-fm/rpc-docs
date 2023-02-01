@@ -5,7 +5,7 @@ description: >-
   (traced) first.
 ---
 
-# trace\_callMany
+# trace_callMany
 
 #### **Parameters**
 
@@ -24,7 +24,7 @@ description: >-
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"method":"trace_callMany","params":[[[{"from":"0x407d73d8a49eeb85d32cf465507dd71d507100c1","to":"0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b","value":"0x186a0"},["trace"]],[{"from":"0x407d73d8a49eeb85d32cf465507dd71d507100c1","to":"0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b","value":"0x186a0"},["trace"]]],"latest"],"id":1,"jsonrpc":"2.0"}'

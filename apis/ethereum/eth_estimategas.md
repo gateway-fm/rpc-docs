@@ -5,18 +5,18 @@ description: >-
   Note that the estimate may be significantly mo
 ---
 
-# eth\_estimategas
+# eth_estimategas
 
 ### **Parameters**
 
-* `Object` - The transaction call object
-  * `from`: `DATA`, 20 Bytes - (optional) The address the transaction is sent from.
-  * `to`: `DATA`, 20 Bytes - The address the transaction is directed to.
-  * `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. `eth_call` consumes zero gas, but this parameter may be needed by some executions. \*\*NOTE: this parameter does not have limit or cap. \*\*
-  * `gasPrice`: `QUANTITY` - (optional) Integer of the gasPrice used for each paid gas.
-  * `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction
-  * `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI
-* `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
+- `Object` - The transaction call object
+  - `from`: `DATA`, 20 Bytes - (optional) The address the transaction is sent from.
+  - `to`: `DATA`, 20 Bytes - The address the transaction is directed to.
+  - `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. `eth_call` consumes zero gas, but this parameter may be needed by some executions. \*\*NOTE: this parameter does not have limit or cap. \*\*
+  - `gasPrice`: `QUANTITY` - (optional) Integer of the gasPrice used for each paid gas.
+  - `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction
+  - `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI
+- `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
 ### Returns
 
@@ -25,7 +25,7 @@ description: >-
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

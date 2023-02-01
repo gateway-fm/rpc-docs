@@ -6,16 +6,16 @@ description: >-
 
 # Ethereum API
 
-https://rpc.`<REGION>`.gateway.fm/v1/ethereum/non-archival/\<mainnet|goerli>
+https://rpc.`<REGION>`.gateway.fm/v4/ethereum/non-archival/\<mainnet|goerli>
 
 Now Ethereum API is available in regions:
 
 eu-north-1; ap-southeast-1
 
-https://rpc.eu-north-1.gateway.fm/v1/ethereum/non-archival/mainnet&#x20;
+https://rpc.eu-north-1.gateway.fm/v4/ethereum/non-archival/mainnet&#x20;
 
-https://rpc.ap-southeast-1.gateway.fm/v1/ethereum/non-archival/mainnet
+https://rpc.ap-southeast-1.gateway.fm/v4/ethereum/non-archival/mainnet
 
-https://rpc.eu-north-1.gateway.fm/v1/ethereum/non-archival/goerli&#x20;
+https://rpc.eu-north-1.gateway.fm/v4/ethereum/non-archival/goerli&#x20;
 
-https://rpc.ap-southeast-1.gateway.fm/v1/ethereum/non-archival/goerli
+https://rpc.ap-southeast-1.gateway.fm/v4/ethereum/non-archival/goerli

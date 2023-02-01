@@ -2,7 +2,7 @@
 description: Returns traces created at given block.
 ---
 
-# trace\_block
+# trace_block
 
 #### **Parameters**
 
@@ -19,7 +19,7 @@ description: Returns traces created at given block.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"method":"trace_block","params":["0xccb93d"],"id":1,"jsonrpc":"2.0"}'

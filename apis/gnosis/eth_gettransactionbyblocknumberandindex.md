@@ -4,13 +4,12 @@ description: >-
   position.
 ---
 
-# eth\_getTransactionByBlockNumberAndIndex
+# eth_getTransactionByBlockNumberAndIndex
 
 ### Parameters
 
-* `QUANTITY|TAG` - a block number, or the string "earliest", "latest" or "pending", as in the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
-* `QUANTITY` - the transaction index position.
-
+- `QUANTITY|TAG` - a block number, or the string "earliest", "latest" or "pending", as in the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
+- `QUANTITY` - the transaction index position.
 
 ### Returns
 
@@ -21,7 +20,7 @@ See [`eth_getTransactionByHash`](./#eth_gettransactionbyhash)
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"id": 89,"jsonrpc": "2.0","method": "eth_getTransactionByBlockNumberAndIndex","params": ["latest","0x3"]}'
@@ -58,4 +57,3 @@ Result
     }
 }
 ```
-

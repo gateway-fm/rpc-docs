@@ -2,23 +2,23 @@
 description: Returns information about a block by block number.
 ---
 
-# eth\_getblockbynumber
+# eth_getblockbynumber
 
 ### Parameters
 
-* `QUANTITY|TAG` - integer of a block number, or the string "earliest", "latest" or "pending", as in the default block parameter.
-* `Boolean` - If true it returns the full transaction objects, if false it returns only the hashes of the transactions.
+- `QUANTITY|TAG` - integer of a block number, or the string "earliest", "latest" or "pending", as in the default block parameter.
+- `Boolean` - If true it returns the full transaction objects, if false it returns only the hashes of the transactions.
 
 ### Returns
 
-See [`eth_getBlockByHash`](./#eth\_getblockbyhash)
+See [`eth_getBlockByHash`](./#eth_getblockbyhash)
 
 ### Example
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

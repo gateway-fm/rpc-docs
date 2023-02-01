@@ -2,23 +2,23 @@
 description: Returns information about a block by block number.
 ---
 
-# eth\_getBlockByNumber
+# eth_getBlockByNumber
 
 ### Parameters
 
-* `QUANTITY|TAG` - integer of a block number, or the string "earliest", "latest" or "pending", as in the default block parameter.
-* `Boolean` - If true it returns the full transaction objects, if false it returns only the hashes of the transactions.
-
+- `QUANTITY|TAG` - integer of a block number, or the string "earliest", "latest" or "pending", as in the default block parameter.
+- `Boolean` - If true it returns the full transaction objects, if false it returns only the hashes of the transactions.
 
 ### Returns
 
 See [`eth_getBlockByHash`](./#eth_getblockbyhash)
 
 ### Example
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1026339", false],"id":1}'
@@ -76,4 +76,3 @@ Result
     }
 }
 ```
-

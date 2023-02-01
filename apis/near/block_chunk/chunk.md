@@ -6,9 +6,9 @@ description: Returns details of a specific chunk.
 
 ### **Parameters**
 
-* `method:` chunk
-* `params:`
-  * `chunk_id` OR `block_id`, `shard_id`
+- `method:` chunk
+- `params:`
+  - `chunk_id` OR `block_id`, `shard_id`
 
 ### **Returns**
 
@@ -19,7 +19,7 @@ Returns details of a specific chunk. You can run a block details query to get a 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

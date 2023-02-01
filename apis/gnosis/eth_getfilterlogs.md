@@ -15,7 +15,7 @@ These two computations will return the same results:
 
 1. Calling `eth_getLogs` with params `[<options>]`
 2. Calling `eth_newFilter` with params `[<options>]`, getting a filter id `<filterId>` back, then calling `eth_getFilterLogs` with params `[<filterId>]`
-{% endhint %}
+   {% endhint %}
 
 ### **Parameters**
 
@@ -26,10 +26,11 @@ These two computations will return the same results:
 See [`eth_getFilterChanges`](./#eth_getfilterchanges)
 
 ### **Example**
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":74}'

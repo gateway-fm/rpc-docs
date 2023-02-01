@@ -1,15 +1,15 @@
 ---
-description: Queries status of a transaction by hash and returns the final transaction result. 
+description: Queries status of a transaction by hash and returns the final transaction result.
 ---
 
 # Transaction Status
 
 ### **Parameters**
 
-* `method:` tx
-* `params:` 
-  * `transaction hash` 
-  * `sender account id`
+- `method:` tx
+- `params:`
+  - `transaction hash`
+  - `sender account id`
 
 ### **Returns**
 
@@ -20,7 +20,7 @@ Queries status of a transaction by hash and returns the final transaction result
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

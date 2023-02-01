@@ -2,7 +2,7 @@
 description: Returns the current ethereum protocol version.
 ---
 
-# eth\_protocolVersion
+# eth_protocolVersion
 
 ### Parameters
 
@@ -17,7 +17,7 @@ none
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":71}'
@@ -32,4 +32,3 @@ Result
     "result": "65"
 }
 ```
-

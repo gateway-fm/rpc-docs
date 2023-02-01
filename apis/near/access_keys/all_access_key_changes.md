@@ -6,11 +6,11 @@ description: Returns changes to all access keys of a specific block.
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_changes
-* `params:`
-  * `changes_type`: all_access_key_changes
-  * `account_ids:`: array, ["account_id_01", "account_id_02"]
-  * `finality` OR `block_id`
+- `method:` EXPERIMENTAL_changes
+- `params:`
+  - `changes_type`: all_access_key_changes
+  - `account_ids:`: array, ["account_id_01", "account_id_02"]
+  - `finality` OR `block_id`
 
 ### **Returns**
 
@@ -21,7 +21,7 @@ Returns changes to all access keys of a specific block. Multiple accounts can be
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

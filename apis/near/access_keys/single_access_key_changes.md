@@ -6,11 +6,11 @@ description: Returns individual access key changes in a specific block.
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_changes
-* `params:`
-  * `changes_type`: single_access_key_changes
-  * `keys`: array, [{ account_id, public_key }]
-  * `finality` OR `block_id`
+- `method:` EXPERIMENTAL_changes
+- `params:`
+  - `changes_type`: single_access_key_changes
+  - `keys`: array, [{ account_id, public_key }]
+  - `finality` OR `block_id`
 
 ### **Returns**
 
@@ -21,7 +21,7 @@ Returns individual access key changes in a specific block. You can query multipl
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

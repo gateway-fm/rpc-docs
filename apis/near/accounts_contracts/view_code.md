@@ -1,16 +1,16 @@
 ---
-description: Returns the contract code (Wasm binary) deployed to the account. 
+description: Returns the contract code (Wasm binary) deployed to the account.
 ---
 
 # View contract code
 
 ### **Parameters**
 
-* `method:` query
-* `params:`
-  * `request_type:` view_code
-  * `finality` OR `block_id`
-  * `account_id:` string, account id
+- `method:` query
+- `params:`
+  - `request_type:` view_code
+  - `finality` OR `block_id`
+  - `account_id:` string, account id
 
 ### **Returns**
 
@@ -21,7 +21,7 @@ Returns the contract code (Wasm binary) deployed to the account. Please note tha
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

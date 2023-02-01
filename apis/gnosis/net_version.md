@@ -19,14 +19,16 @@ none
 `"42"`: Kovan Testnet
 
 ### **Example**
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{ "id": 89, "jsonrpc": "2.0", "method": "net_version", "params": []}'
 ```
+
 Result
 
 ```javascript

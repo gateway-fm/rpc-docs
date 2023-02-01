@@ -5,34 +5,34 @@ description: >-
   from is not tampered with.
 ---
 
-# eth\_getProof
+# eth_getProof
 
 ### **Parameters**
 
-* `DATA`, 20 Bytes - address of the account.
-* `ARRAY`, 32 Bytes - array of storage-keys which should be proofed and included. See[`eth_getStorageAt`](./#eth_getstorageat)
-* `QUANTITY|TAG` - integer block number, or the string `"latest"` or `"earliest"`, see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter)
+- `DATA`, 20 Bytes - address of the account.
+- `ARRAY`, 32 Bytes - array of storage-keys which should be proofed and included. See[`eth_getStorageAt`](./#eth_getstorageat)
+- `QUANTITY|TAG` - integer block number, or the string `"latest"` or `"earliest"`, see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter)
 
 ### **Returns**
 
 `Object` - A account object:
 
-* `balance`: `QUANTITY` - the balance of the account. See[`eth_getBalance`](./#eth_getbalance)
-* `codeHash`: `DATA`, 32 Bytes - hash of the code of the account. For a simple Account without code it will return `"0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"`
-* `nonce`: `QUANTITY`, - nonce of the account. See [`eth_getTransactionCount`](./#eth_gettransactioncount)\`\`
-* `storageHash`: `DATA`, 32 Bytes - SHA3 of the StorageRoot. All storage will deliver a MerkleProof starting with this rootHash.
-* `accountProof`: `ARRAY` - Array of rlp-serialized MerkleTree-Nodes, starting with the stateRoot-Node, following the path of the SHA3 \(address\) as key.
-* `storageProof`: `ARRAY` - Array of storage-entries as requested. Each entry is a object with these properties:
-  * `key`: `QUANTITY` - the requested storage key
-  * `value`: `QUANTITY` - the storage value
-  * `proof`: `ARRAY` - Array of rlp-serialized MerkleTree-Nodes, starting with the storageHash-Node, following the path of the SHA3 \(key\) as path.
+- `balance`: `QUANTITY` - the balance of the account. See[`eth_getBalance`](./#eth_getbalance)
+- `codeHash`: `DATA`, 32 Bytes - hash of the code of the account. For a simple Account without code it will return `"0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"`
+- `nonce`: `QUANTITY`, - nonce of the account. See [`eth_getTransactionCount`](./#eth_gettransactioncount)\`\`
+- `storageHash`: `DATA`, 32 Bytes - SHA3 of the StorageRoot. All storage will deliver a MerkleProof starting with this rootHash.
+- `accountProof`: `ARRAY` - Array of rlp-serialized MerkleTree-Nodes, starting with the stateRoot-Node, following the path of the SHA3 \(address\) as key.
+- `storageProof`: `ARRAY` - Array of storage-entries as requested. Each entry is a object with these properties:
+  - `key`: `QUANTITY` - the requested storage key
+  - `value`: `QUANTITY` - the storage value
+  - `proof`: `ARRAY` - Array of rlp-serialized MerkleTree-Nodes, starting with the storageHash-Node, following the path of the SHA3 \(key\) as path.
 
 ### **Example**
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
@@ -70,4 +70,3 @@ Result
   }
 }
 ```
-

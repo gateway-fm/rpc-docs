@@ -6,12 +6,12 @@ description: Returns the state change details of a contract based on the key pre
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_changes
-* `params:`
-  * `changes_type:` data_changes
-  * `finality` OR `block_id`
-  * `account_ids:` ["account_id"]
-  * `key_prefix_base64`: "base64 encoded key value"
+- `method:` EXPERIMENTAL_changes
+- `params:`
+  - `changes_type:` data_changes
+  - `finality` OR `block_id`
+  - `account_ids:` ["account_id"]
+  - `key_prefix_base64`: "base64 encoded key value"
 
 ### **Returns**
 
@@ -22,7 +22,7 @@ Returns the state change details of a contract based on the key prefix (encoded 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

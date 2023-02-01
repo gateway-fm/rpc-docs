@@ -6,8 +6,8 @@ description: Sends a transaction and immediately returns transaction hash.
 
 ### **Parameters**
 
-* `method:` broadcast_tx_async
-* `params:` [SignedTransaction encoded in base64]
+- `method:` broadcast_tx_async
+- `params:` [SignedTransaction encoded in base64]
 
 ### **Returns**
 
@@ -18,7 +18,7 @@ Sends a transaction and immediately returns transaction hash.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

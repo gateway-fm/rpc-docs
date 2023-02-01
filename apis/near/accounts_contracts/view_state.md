@@ -1,17 +1,17 @@
 ---
-description: Returns the state (key value pairs) of a contract based on the key prefix (base64 encoded). 
+description: Returns the state (key value pairs) of a contract based on the key prefix (base64 encoded).
 ---
 
 # View contract state
 
 ### **Parameters**
 
-* `method:` query
-* `params:`
-  * `request_type:` view_state
-  * `finality` OR `block_id`
-  * `account_id:` string, account id
-  * `prefix_base64`: ""
+- `method:` query
+- `params:`
+  - `request_type:` view_state
+  - `finality` OR `block_id`
+  - `account_id:` string, account id
+  - `prefix_base64`: ""
 
 ### **Returns**
 
@@ -22,7 +22,7 @@ Returns the state (key value pairs) of a contract based on the key prefix (base6
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

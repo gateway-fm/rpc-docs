@@ -4,7 +4,7 @@ description: >-
   transaction.
 ---
 
-# trace\_replayBlockTransaction
+# trace_replayBlockTransaction
 
 #### **Parameters**
 
@@ -22,7 +22,7 @@ description: >-
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"method":"trace_replayBlockTransactions","params":["0x2ed119",["trace"]],"id":1,"jsonrpc":"2.0"}'

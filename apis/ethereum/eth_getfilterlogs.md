@@ -4,18 +4,18 @@ description: >-
   same results with an eth_getLogs call (see hint below).
 ---
 
-# eth\_getfilterlogs
+# eth_getfilterlogs
 
 {% hint style="warning" %}
-This method only works for filters creates with [`eth_newFilter`](./#eth\_newfilter)not for filters created using [`eth_newBlockFilter`](./#eth\_newblockfilter) or [`eth_newPendingTransactionFilter`](./#eth\_newpendingtransactionfilter), which will return `"filter not found".`
+This method only works for filters creates with [`eth_newFilter`](./#eth_newfilter)not for filters created using [`eth_newBlockFilter`](./#eth_newblockfilter) or [`eth_newPendingTransactionFilter`](./#eth_newpendingtransactionfilter), which will return `"filter not found".`
 
-#### eth\_getLogs vs. eth\_getFilterLogs
+#### eth_getLogs vs. eth_getFilterLogs
 
 These two computations will return the same results:
 
 1. Calling `eth_getLogs` with params `[<options>]`
 2. Calling `eth_newFilter` with params `[<options>]`, getting a filter id `<filterId>` back, then calling `eth_getFilterLogs` with params `[<filterId>]`
-{% endhint %}
+   {% endhint %}
 
 ### **Parameters**
 
@@ -23,14 +23,14 @@ These two computations will return the same results:
 
 ### **Returns**
 
-See [`eth_getFilterChanges`](./#eth\_getfilterchanges)
+See [`eth_getFilterChanges`](./#eth_getfilterchanges)
 
 ### **Example**
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

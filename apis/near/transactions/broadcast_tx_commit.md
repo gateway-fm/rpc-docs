@@ -1,13 +1,13 @@
 ---
-description: Sends a transaction and waits until transaction is fully complete. 
+description: Sends a transaction and waits until transaction is fully complete.
 ---
 
 # Send transaction (await)
 
 ### **Parameters**
 
-* `method:` broadcast_tx_commit
-* `params:` [SignedTransaction encoded in base64]
+- `method:` broadcast_tx_commit
+- `params:` [SignedTransaction encoded in base64]
 
 ### **Returns**
 
@@ -18,7 +18,7 @@ Sends a transaction and waits until transaction is fully complete. (Has a 10 sec
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

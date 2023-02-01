@@ -12,29 +12,30 @@ description: Returns the receipt of a transaction by transaction hash.
 
 ### Returns
 
-* `Object` - A transaction receipt object, or null when no receipt was found:
-  * `transactionHash`: `DATA`, 32 Bytes - hash of the transaction.
-  * `transactionIndex`: `QUANTITY` - integer of the transactions index position in the block.
-  * `blockHash`: `DATA`, 32 Bytes - hash of the block where this transaction was in.
-  * `blockNumber`: `QUANTITY` - block number where this transaction was in.
-  * `from`: `DATA`, 20 Bytes - address of the sender.
-  * `to`: `DATA`, 20 Bytes - address of the receiver. null when its a contract creation transaction.
-  * `cumulativeGasUsed`: `QUANTITY` - The total amount of gas used when this transaction was executed in the block.
-  * `gasUsed`: `QUANTITY` - The amount of gas used by this specific transaction alone.
-  * `contractAddress`: `DATA`, 20 Bytes - The contract address created, if the transaction was a contract creation, otherwise null.
-  * `logs`: `Array` - Array of log objects, which this transaction generated.
-  * `logsBloom`: `DATA`, 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.
+- `Object` - A transaction receipt object, or null when no receipt was found:
+  - `transactionHash`: `DATA`, 32 Bytes - hash of the transaction.
+  - `transactionIndex`: `QUANTITY` - integer of the transactions index position in the block.
+  - `blockHash`: `DATA`, 32 Bytes - hash of the block where this transaction was in.
+  - `blockNumber`: `QUANTITY` - block number where this transaction was in.
+  - `from`: `DATA`, 20 Bytes - address of the sender.
+  - `to`: `DATA`, 20 Bytes - address of the receiver. null when its a contract creation transaction.
+  - `cumulativeGasUsed`: `QUANTITY` - The total amount of gas used when this transaction was executed in the block.
+  - `gasUsed`: `QUANTITY` - The amount of gas used by this specific transaction alone.
+  - `contractAddress`: `DATA`, 20 Bytes - The contract address created, if the transaction was a contract creation, otherwise null.
+  - `logs`: `Array` - Array of log objects, which this transaction generated.
+  - `logsBloom`: `DATA`, 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.
 
 It also returns either:
-* `root` : `DATA` 32 bytes of post-transaction stateroot (pre Byzantium)
-* `status`: `QUANTITY` either 1 (success) or 0 (failure)
+
+- `root` : `DATA` 32 bytes of post-transaction stateroot (pre Byzantium)
+- `status`: `QUANTITY` either 1 (success) or 0 (failure)
 
 ### **Example**
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"id": 1,"jsonrpc": "2.0","method": "eth_getTransactionReceipt","params": ["0x208b6b084c40d39f548992375d34f212e80eae42a21668f4a1d512fecffec778"]}'

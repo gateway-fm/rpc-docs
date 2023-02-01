@@ -6,8 +6,8 @@ description: Returns general status of a given node (sync status, nearcore node 
 
 ### **Parameters**
 
-* `method:` status
-* `params:` []
+- `method:` status
+- `params:` []
 
 ### **Returns**
 
@@ -18,7 +18,7 @@ Returns general status of a given node (sync status, nearcore node version, prot
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

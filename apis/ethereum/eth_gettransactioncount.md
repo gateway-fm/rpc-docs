@@ -2,12 +2,12 @@
 description: Returns the number of transactions sent from an address.
 ---
 
-# eth\_gettransactioncount
+# eth_gettransactioncount
 
 ### Parameters
 
-* `DATA`, 20 Bytes - address.
-* `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
+- `DATA`, 20 Bytes - address.
+- `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
 ### Returns
 
@@ -18,7 +18,7 @@ description: Returns the number of transactions sent from an address.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

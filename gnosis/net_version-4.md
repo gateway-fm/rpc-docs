@@ -2,17 +2,17 @@
 description: Returns traces matching given filter
 ---
 
-# trace\_filter
+# trace_filter
 
 #### **Parameters**
 
-* `Object` - The filter object
-  * `fromBlock`: `Quantity` or `Tag` - (optional) From this block.
-  * `toBlock`: `Quantity` or `Tag` - (optional) To this block.
-  * `fromAddress`: `Array` - (optional) Sent from these addresses.
-  * `toAddress`: `Address` - (optional) Sent to these addresses.
-  * `after`: `Quantity` - (optional) The offset trace number
-  * `count`: `Quantity` - (optional) Integer number of traces to display in a batch.
+- `Object` - The filter object
+  - `fromBlock`: `Quantity` or `Tag` - (optional) From this block.
+  - `toBlock`: `Quantity` or `Tag` - (optional) To this block.
+  - `fromAddress`: `Array` - (optional) Sent from these addresses.
+  - `toAddress`: `Address` - (optional) Sent to these addresses.
+  - `after`: `Quantity` - (optional) The offset trace number
+  - `count`: `Quantity` - (optional) Integer number of traces to display in a batch.
 
 #### **Returns**
 
@@ -25,7 +25,7 @@ description: Returns traces matching given filter
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"method":"trace_filter","params":[{"fromBlock":"0x2ed0c4","toBlock":"0x2ed128","toAddress":["0x8bbB73BCB5d553B5A556358d27625323Fd781D37"],"after":1000,"count":100}],"id":1,"jsonrpc":"2.0"}'

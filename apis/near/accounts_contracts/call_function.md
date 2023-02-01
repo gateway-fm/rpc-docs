@@ -6,13 +6,13 @@ description: Allows you to call a contract method as a view function.
 
 ### **Parameters**
 
-* `method:` query
-* `params:`
-  * `request_type:` call_function
-  * `finality` OR `block_id`
-  * `account_id:` string, account id 
-  * `method_name`: name_of_a_example.testnet_method 
-  * `args_base64`: method_arguments_base_64_encoded
+- `method:` query
+- `params:`
+  - `request_type:` call_function
+  - `finality` OR `block_id`
+  - `account_id:` string, account id
+  - `method_name`: name_of_a_example.testnet_method
+  - `args_base64`: method_arguments_base_64_encoded
 
 ### **Returns**
 
@@ -23,7 +23,7 @@ Allows you to call a contract method as a view function.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

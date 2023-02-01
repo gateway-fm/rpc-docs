@@ -4,13 +4,13 @@ description: >-
   position.
 ---
 
-# eth\_getTransactionByBlockHashAndIndex
+# eth_getTransactionByBlockHashAndIndex
 
 ### Parameters
 
-* `DATA`, 32 Bytes - hash of a block.
+- `DATA`, 32 Bytes - hash of a block.
 
-* `QUANTITY` - integer of the transaction index position.
+- `QUANTITY` - integer of the transaction index position.
 
 ### Returns
 
@@ -21,7 +21,7 @@ See [`eth_getTransactionByHash`](./#eth_gettransactionbyhash)
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"id": 89,"jsonrpc": "2.0","method": "eth_getTransactionByBlockHashAndIndex","params": ["0x3b7e9781c36c7dd97c688aa879e79cf10c71076d40d426d38c87a6fa361db623","0x0"]}'
@@ -58,4 +58,3 @@ Result
     }
 }
 ```
-

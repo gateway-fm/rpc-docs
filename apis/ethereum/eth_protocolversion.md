@@ -2,7 +2,7 @@
 description: Returns the current ethereum protocol version.
 ---
 
-# eth\_protocolversion
+# eth_protocolversion
 
 ### Parameters
 
@@ -17,7 +17,7 @@ none
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/non-archival/mainnet  \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \

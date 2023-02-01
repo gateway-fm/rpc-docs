@@ -4,39 +4,38 @@ description: >-
   since last poll.
 ---
 
-# eth\_getFilterChanges
+# eth_getFilterChanges
 
 ### Parameters
 
 `QUANTITY` - the filter id.
 
-
 ### **Returns**
 
 `Array` - Array of log objects, or an empty array if nothing has changed since last poll.
 
-**NOTE: **`eth_getFilterChanges` only returns logs since the filter was **created**, regardless of the block passed in to create the filter. To get logs ranging from a specific block you should use [`eth_getLogs`](eth\_getlogs.md)` .`
+**NOTE: **`eth_getFilterChanges` only returns logs since the filter was **created**, regardless of the block passed in to create the filter. To get logs ranging from a specific block you should use [`eth_getLogs`](eth_getlogs.md)` .`
 
-
-* For filters created with `eth_newBlockFilter` the return are block hashes (`DATA`, 32 Bytes), e.g. `["0x3454645634534..."]`.
-* For filters created with `eth_newPendingTransactionFilter`  the return are transaction hashes (`DATA`, 32 Bytes), e.g. `["0x6345343454645..."]`.
-* For filters created with `eth_newFilter` logs are objects with following params:
-  * `removed`: `TAG` - `true` when the log was removed, due to a chain reorganization. `false` if its a valid log.
-  * `logIndex`: `QUANTITY` - integer of the log index position in the block. `null` when its pending log.
-  * `transactionIndex`: `QUANTITY` - integer of the transactions index position log was created from. `null` when its pending log.
-  * `transactionHash`: `DATA`, 32 Bytes - hash of the transactions this log was created from. `null` when its pending log.
-  * `blockHash`: `DATA`, 32 Bytes - hash of the block where this log was in. `null` when its pending. `null` when its pending log.
-  * `blockNumber`: `QUANTITY` - the block number where this log was in. `null` when its pending. `null` when its pending log.
-  * `address`: `DATA`, 20 Bytes - address from which this log originated.
-  * `data`: `DATA` - contains one or more 32 Bytes non-indexed arguments of the log.
-  * `topics`: `Array of DATA` - Array of 0 to 4 32 Bytes `DATA` of indexed log arguments.&#x20;
-    * In _solidity_: The first topic is the _hash_ of the signature of the event (e.g. `Deposit(address,bytes32,uint256)`), except you declare the event with the `anonymous` specifier.
+- For filters created with `eth_newBlockFilter` the return are block hashes (`DATA`, 32 Bytes), e.g. `["0x3454645634534..."]`.
+- For filters created with `eth_newPendingTransactionFilter` the return are transaction hashes (`DATA`, 32 Bytes), e.g. `["0x6345343454645..."]`.
+- For filters created with `eth_newFilter` logs are objects with following params:
+  - `removed`: `TAG` - `true` when the log was removed, due to a chain reorganization. `false` if its a valid log.
+  - `logIndex`: `QUANTITY` - integer of the log index position in the block. `null` when its pending log.
+  - `transactionIndex`: `QUANTITY` - integer of the transactions index position log was created from. `null` when its pending log.
+  - `transactionHash`: `DATA`, 32 Bytes - hash of the transactions this log was created from. `null` when its pending log.
+  - `blockHash`: `DATA`, 32 Bytes - hash of the block where this log was in. `null` when its pending. `null` when its pending log.
+  - `blockNumber`: `QUANTITY` - the block number where this log was in. `null` when its pending. `null` when its pending log.
+  - `address`: `DATA`, 20 Bytes - address from which this log originated.
+  - `data`: `DATA` - contains one or more 32 Bytes non-indexed arguments of the log.
+  - `topics`: `Array of DATA` - Array of 0 to 4 32 Bytes `DATA` of indexed log arguments.&#x20;
+    - In _solidity_: The first topic is the _hash_ of the signature of the event (e.g. `Deposit(address,bytes32,uint256)`), except you declare the event with the `anonymous` specifier.
 
 ### **Example**
+
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/ethereum/archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/ethereum/archival/mainnet \
 -X POST \
 -H "Authorization: Bearer <YOUR_API_KEY>" \
 -H "Content-Type: application/json" \
@@ -72,4 +71,3 @@ Result
     }
 }
 ```
-

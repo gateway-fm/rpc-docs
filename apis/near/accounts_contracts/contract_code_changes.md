@@ -6,11 +6,11 @@ description: Returns code changes made when deploying a contract.
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_changes
-* `params:`
-  * `changes_type:` contract_code_changes
-  * `finality` OR `block_id`
-  * `account_ids:` ["account_id"]
+- `method:` EXPERIMENTAL_changes
+- `params:`
+  - `changes_type:` contract_code_changes
+  - `finality` OR `block_id`
+  - `account_ids:` ["account_id"]
 
 ### **Returns**
 
@@ -21,7 +21,7 @@ Returns code changes made when deploying a contract. Change is returned is a bas
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

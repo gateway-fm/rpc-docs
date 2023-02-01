@@ -6,9 +6,9 @@ description: Returns changes in block for given block height or hash.
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_changes_in_block
-* `params:`
-  * `finality` OR `block_id`
+- `method:` EXPERIMENTAL_changes_in_block
+- `params:`
+  - `finality` OR `block_id`
 
 ### **Returns**
 
@@ -19,7 +19,7 @@ Returns changes in block for given block height or hash. You can also use finali
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

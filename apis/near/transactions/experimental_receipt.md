@@ -1,14 +1,14 @@
 ---
-description: Fetches a receipt by it's ID (as is, without a status or execution outcome) 
+description: Fetches a receipt by it's ID (as is, without a status or execution outcome)
 ---
 
 # Receipt by ID
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_receipt
-* `params:` 
-  * `receipt_id`
+- `method:` EXPERIMENTAL_receipt
+- `params:`
+  - `receipt_id`
 
 ### **Returns**
 
@@ -19,7 +19,7 @@ Fetches a receipt by it's ID (as is, without a status or execution outcome)
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \

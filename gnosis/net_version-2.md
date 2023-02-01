@@ -2,7 +2,7 @@
 description: Executes the given call and returns a number of possible traces for it.
 ---
 
-# trace\_call
+# trace_call
 
 #### **Parameters**
 
@@ -20,8 +20,6 @@ description: Executes the given call and returns a number of possible traces for
 
 `data` - (optional) String of the hash of the method signature and encoded parameters
 
-
-
 `array` - Type of trace, one or more of `vmTrace` ,`trace` ,`statediff`&#x20;
 
 `quantity` or `tag` - Integer block number, or the string 'latest', 'earliest' or 'pending'
@@ -37,7 +35,7 @@ description: Executes the given call and returns a number of possible traces for
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/gnosis/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/gnosis/non-archival/mainnet \
 -X POST \
 -H "Content-Type: application/json" \
 -d '{"method":"trace_call","params":[{ ... },["trace"]],"id":1,"jsonrpc":"2.0"}'

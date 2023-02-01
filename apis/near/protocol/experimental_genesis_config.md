@@ -6,8 +6,8 @@ description: Returns current genesis configuration.
 
 ### **Parameters**
 
-* `method:` EXPERIMENTAL_genesis_config
-* `params:` none
+- `method:` EXPERIMENTAL_genesis_config
+- `params:` none
 
 ### **Returns**
 
@@ -18,7 +18,7 @@ Returns current genesis configuration.
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v1/near/non-archival/mainnet \
+curl https://rpc.<REGION>.gateway.fm/v4/near/non-archival/mainnet \
 -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <YOUR_API_KEY>' \
