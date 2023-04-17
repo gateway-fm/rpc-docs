@@ -1,30 +1,31 @@
----
-description: Returns the number of the most recent block.
----
+# eth_blockNumber
 
-# eth_blocknumber
+
+> Returns the number of the most recent block.
+
 
 ## Parameters
 
-none
+`None`
 
 ## Returns
 
-`QUANTITY` - integer of the current block number the client is on.
+`result` - An integer value of the current block number the client is on encoded as hexadecimal
 
-### **Example**
-
-Request
+## **Request example**
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":71}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jsonrpc": "2.0",
+    "method": "eth_blockNumber",
+    "params": [],
+    "id": 71
+}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {
