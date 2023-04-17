@@ -1,12 +1,9 @@
----
-description: >-
-  Executes a new message call immediately without creating a transaction on the
-  block chain.
----
-
 # eth_call
 
-This is one of the most commonly used API calls. It is used to read from the blockchain which includes executing smart contracts, but does not publish anything to the blockchain.
+
+> Executes a new message call immediately without creating a transaction on the
+  blockchain.
+
 
 ### Parameters
 
@@ -21,31 +18,41 @@ This is one of the most commonly used API calls. It is used to read from the blo
 
 ### Returns
 
-`DATA` - the return value of executed contract.
+`DATA` - the return value of executed contract method.
 
-**Example**
-
-Request
+## **Request example**
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_call","params":[{"from": "0x4c88153de66e84c6691fa6bf5b5823530300a942","to": "0x3d14de87b5ade1c61a0b7ca29f7632e6e756b8bf","gas": "0x76c0","gasPrice": "0x9184e72a000","value": "0x0","data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}, "latest"],"id":1}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jsonrpc": "2.0",
+    "method": "eth_call",
+    "params": [
+        {
+            "from": "0x55BA4cB41D0C8F62aB4BB207d0bF9fA42f9FE70d",
+            "to": "0x3d14de87b5ade1c61a0b7ca29f7632e6e756b8bf",
+            "gas": "0x76c0",
+            "gasPrice": "0x9184e72a000",
+            "value": "0x0",
+            "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"
+        },
+        "latest"
+    ],
+    "id": 1
+}'
 ```
 
-Result
+## **Response example**
 
-```javascript
-{
-    "jsonrpc": "2.0",
-    "id": 1,
-    "result": "0x"
+```{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": "0x"
 }
 ```
 
-`eth_call`will check the balance of the sender to make sure that the sender has enough gas to complete the request. Example of response when `from` doesn't have enough funds:
+`eth_call` checks the balance of the sender to make sure that the sender has enough gas to complete the request. Example of response when `from` doesn't have enough funds:
 
 ```javascript
 {

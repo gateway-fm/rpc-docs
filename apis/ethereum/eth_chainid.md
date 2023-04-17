@@ -1,32 +1,25 @@
----
-description: >-
-  Returns the currently configured chain ID, a value used in replay-protected
+# eth_chainId
+
+> Returns the currently configured chain ID, a value used in replay-protected
   transaction signing as introduced by EIP-155.
----
 
-# eth_chainid
+## Parameters
 
-### **Parameters**
+`None`
 
-None.
+## Returns
 
-### **Returns**
+`result` - hexadecimal value in string format which represents an integer of the chain.
 
-`QUANTITY` - integer of the current chain ID.
-
-### **Example**
-
-Request
+## **Request example**
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":1}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{"method":"eth_chainId","params":[],"id":1,"jsonrpc":"2.0"}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {
