@@ -1,35 +1,38 @@
----
-description: Returns the current price per gas in wei.
----
+# eth_gasPrice
 
-# eth_gasprice
 
-### Parameters
+> Returns the hexadecimal value of current price per gas in wei.
 
-none
+
+## Parameters
+
+`None`
 
 ### Returns
 
-`QUANTITY` - integer of the current gas price in wei.
+`QUANTITY` - hexadecimal value of the current gas price in wei.
 
-### **Example**
+## **Request example**
 
 Request
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":71}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jsonrpc": "2.0",
+    "method": "eth_gasPrice",
+    "params": [],
+    "id": 71
+}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {
     "jsonrpc": "2.0",
     "id": 71,
-    "result": "0x20688d341a"
+    "result": "0x8a8bfa5a8"
 }
 ```
