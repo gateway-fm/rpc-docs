@@ -1,7 +1,7 @@
-# net_version
+# eth_gasPrice
 
 
-> Returns the current network id
+> Returns the hexadecimal value of current price per gas in wei.
 
 
 ## Parameters
@@ -10,16 +10,18 @@
 
 ## Returns
 
-`String` - The current network id.
+`QUANTITY` - hexadecimal value of the current gas price in wei.
 
 ## **Request example**
+
+Request
 
 ```bash
 curl --location 'https://rpc.eth.gateway.fm' \
 --header 'Content-Type: application/json' \
 --data '{
     "jsonrpc": "2.0",
-    "method": "net_version",
+    "method": "eth_gasPrice",
     "params": [],
     "id": 71
 }'
@@ -29,8 +31,8 @@ curl --location 'https://rpc.eth.gateway.fm' \
 
 ```javascript
 {
-    "jsonrpc":"2.0",
-    "id":89,
-    "result":"1"
+    "jsonrpc": "2.0",
+    "id": 71,
+    "result": "0x8a8bfa5a8"
 }
 ```

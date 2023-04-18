@@ -1,31 +1,35 @@
----
-description: Returns code at a given address.
----
+# eth_getCode
 
-# eth_getcode
 
-### Parameters
+> Returns code at a given address
 
-- `DATA`, 20 Bytes - address.
-- `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
-### Returns
+## Parameters
 
-`DATA` - the code from the given address.
+- `ADDRESS`, 20 Bytes - address of the smart contract from which the bytecode will be obtained.
+- `BLOCK NUMBER |TAG` - block number as a string in hexadecimal format or tags("latest", "earliest" or "pending"), see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter).
 
-### **Example**
+## Returns
 
-Request
+`RESULT` - The bytecode from a given address returned as a string
+
+## **Request example**
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_getCode","params":["0x6B175474E89094C44Da98b954EedeAC495271d0F", "latest"],"id":1}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jsonrpc": "2.0",
+    "method": "eth_getCode",
+    "params": [
+        "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "latest"
+    ],
+    "id": 1
+}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {

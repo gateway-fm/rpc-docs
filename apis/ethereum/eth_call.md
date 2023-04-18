@@ -5,7 +5,7 @@
   blockchain.
 
 
-### Parameters
+## Parameters
 
 - `Object` - The transaction call object
   - `from`: `DATA`, 20 Bytes - (optional) The address the transaction is sent from.
@@ -16,7 +16,7 @@
   - `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI](https://docs.soliditylang.org/en/v0.7.0/abi-spec.html)
 - `QUANTITY|TAG` - integer block number, or the string "latest", "earliest" or "pending" (see the [default block parameter](https://eth.wiki/json-rpc/API#the-default-block-parameter)), OR the `blockHash` (in accordance with [EIP-1898](https://eips.ethereum.org/EIPS/eip-1898)) **NOTE: the parameter is an object instead of a string and should be specified as: `{"blockHash": "0x<some-hash>"}.`** Learn more [here](https://eips.ethereum.org/EIPS/eip-1898).
 
-### Returns
+## Returns
 
 `DATA` - the return value of executed contract method.
 
@@ -30,7 +30,7 @@ curl --location 'https://rpc.eth.gateway.fm' \
     "method": "eth_call",
     "params": [
         {
-            "from": "0x55BA4cB41D0C8F62aB4BB207d0bF9fA42f9FE70d",
+            "from": "0x00000000219ab540356cBB839Cbe05303d7705Fa",
             "to": "0x3d14de87b5ade1c61a0b7ca29f7632e6e756b8bf",
             "gas": "0x76c0",
             "gasPrice": "0x9184e72a000",

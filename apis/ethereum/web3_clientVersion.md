@@ -1,27 +1,25 @@
-# eth_gasPrice
+# web3_clientVersion
 
 
-> Returns the hexadecimal value of current price per gas in wei.
+> Returns the current client version
 
 
 ## Parameters
 
 `None`
 
-### Returns
+## Returns
 
-`QUANTITY` - hexadecimal value of the current gas price in wei.
+`String` - The current client version
 
 ## **Request example**
-
-Request
 
 ```bash
 curl --location 'https://rpc.eth.gateway.fm' \
 --header 'Content-Type: application/json' \
 --data '{
     "jsonrpc": "2.0",
-    "method": "eth_gasPrice",
+    "method": "web3_clientVersion",
     "params": [],
     "id": 71
 }'
@@ -33,6 +31,6 @@ curl --location 'https://rpc.eth.gateway.fm' \
 {
     "jsonrpc": "2.0",
     "id": 71,
-    "result": "0x8a8bfa5a8"
+    "result": "erigon/2.42.0/linux-amd64/go1.20.2"
 }
 ```

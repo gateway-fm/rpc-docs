@@ -1,11 +1,10 @@
----
-description: >-
-  Returns the value from a storage position at a given address, or in other
+# eth_getStorageAt
+
+
+> Returns the value from a storage position at a given address, or in other
   words, returns the state of the contract's storage, which may not be exposed
   via the contract's methods.
----
 
-# eth_getstorageat
 
 ## Parameters
 
@@ -17,7 +16,7 @@ description: >-
 
 `DATA` - the value at this storage position.
 
-### Example
+## **Request example**
 
 Calculating the correct position depends on the storage to retrieve. Consider the following contract deployed at `0x295a70b2de5e3953354a6a8344e616ed314d7251` by address `0x391694e7e0b0cce554cb130d723a9d27458f9298`.
 
@@ -43,7 +42,7 @@ curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
 -d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {
@@ -82,14 +81,21 @@ undefined
 Now to fetch the storage:
 
 ```bash
-curl https://rpc.gateway.fm/v4/ethereum/mainnet \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0bE","0x0",14036168 ],"id": 89}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jsonrpc": "2.0",
+    "method": "eth_getStorageAt",
+    "params": [
+        "0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0bE",
+        "0x0",
+        14036168
+    ],
+    "id": 89
+}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {

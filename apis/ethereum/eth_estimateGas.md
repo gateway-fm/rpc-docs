@@ -46,5 +46,3 @@ curl --location 'https://rpc.eth.gateway.fm' \
     "result": "0x5208"
 }
 ```
-
-###
