@@ -1,16 +1,14 @@
----
-description: Returns an object with data about the sync status or false.
----
-
 # eth_syncing
 
-**Note**: Your response from `eth_syncing` will likely return false because Gateway only supports nodes in production that are completed synced.
 
-### **Parameters**
+> Returns an object with data about the sync status or false.
 
-none
 
-### **Returns**
+## Parameters
+
+`None`
+
+## Returns
 
 `Object|Boolean`, An object with sync status data or `FALSE`, when not syncing:
 
@@ -18,19 +16,20 @@ none
 - `currentBlock`: `QUANTITY` - The current block, same as eth_blockNumber
 - `highestBlock`: `QUANTITY` - The estimated highest block
 
-### **Example**
-
-Request
+## **Request example**
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":71}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jsonrpc": "2.0",
+    "method": "eth_syncing",
+    "params": [],
+    "id": 71
+}'
 ```
 
-Response
+## **Response example**
 
 ```javascript
 {

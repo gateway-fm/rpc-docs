@@ -1,7 +1,7 @@
-# net_version
+# eth_blockNumber
 
 
-> Returns the current network id
+> Returns the number of the most recent block.
 
 
 ## Parameters
@@ -10,7 +10,7 @@
 
 ## Returns
 
-`String` - The current network id.
+`result` - An integer value of the current block number the client is on encoded as hexadecimal
 
 ## **Request example**
 
@@ -19,7 +19,7 @@ curl --location 'https://rpc.eth.gateway.fm' \
 --header 'Content-Type: application/json' \
 --data '{
     "jsonrpc": "2.0",
-    "method": "net_version",
+    "method": "eth_blockNumber",
     "params": [],
     "id": 71
 }'
@@ -29,8 +29,8 @@ curl --location 'https://rpc.eth.gateway.fm' \
 
 ```javascript
 {
-    "jsonrpc":"2.0",
-    "id":89,
-    "result":"1"
+    "jsonrpc": "2.0",
+    "id": 71,
+    "result": "0xd77735"
 }
 ```

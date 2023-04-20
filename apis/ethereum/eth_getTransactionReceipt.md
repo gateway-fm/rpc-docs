@@ -1,16 +1,16 @@
----
-description: Returns the receipt of a transaction by transaction hash.
----
+# eth_getTransactionReceipt
 
-# eth_gettransactionreceipt
+
+> Returns the receipt of a transaction by transaction hash.
+
 
 **Note:** the receipt is not available for pending transactions.
 
-### Parameters
+## Parameters
 
-`DATA`, 32 Bytes - hash of a transaction
+`TRANSACTIONHASH`, 32 Bytes - hash of a transaction
 
-### Returns
+## Returns
 
 - `Object` - A transaction receipt object, or null when no receipt was found:
   - `transactionHash`: `DATA`, 32 Bytes - hash of the transaction.
@@ -30,19 +30,22 @@ It also returns either:
 - `root` : `DATA` 32 bytes of post-transaction stateroot (pre Byzantium)
 - `status`: `QUANTITY` either 1 (success) or 0 (failure)
 
-### **Example**
-
-Request
+## **Request example**
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"id": 1,"jsonrpc": "2.0","method": "eth_getTransactionReceipt","params": ["0x3736b7dc8805835e508b6c08c927cc99ecf2f8cdbad147acc199ac4fa675412b"]}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "eth_getTransactionReceipt",
+    "params": [
+        "0x3736b7dc8805835e508b6c08c927cc99ecf2f8cdbad147acc199ac4fa675412b"
+    ]
+}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {

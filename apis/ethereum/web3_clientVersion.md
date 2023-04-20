@@ -1,7 +1,7 @@
-# net_version
+# web3_clientVersion
 
 
-> Returns the current network id
+> Returns the current client version
 
 
 ## Parameters
@@ -10,7 +10,7 @@
 
 ## Returns
 
-`String` - The current network id.
+`String` - The current client version
 
 ## **Request example**
 
@@ -19,7 +19,7 @@ curl --location 'https://rpc.eth.gateway.fm' \
 --header 'Content-Type: application/json' \
 --data '{
     "jsonrpc": "2.0",
-    "method": "net_version",
+    "method": "web3_clientVersion",
     "params": [],
     "id": 71
 }'
@@ -29,8 +29,8 @@ curl --location 'https://rpc.eth.gateway.fm' \
 
 ```javascript
 {
-    "jsonrpc":"2.0",
-    "id":89,
-    "result":"1"
+    "jsonrpc": "2.0",
+    "id": 71,
+    "result": "erigon/2.42.0/linux-amd64/go1.20.2"
 }
 ```

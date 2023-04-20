@@ -1,15 +1,15 @@
----
-description: Returns information about a block by hash.
----
+# eth_getBlockByHash
 
-# eth_getblockbyhash
 
-### Parameters
+> Returns information about a block by block hash.
 
-- `DATA`, 32 Bytes - Hash of a block.
-- `Boolean` - If true it returns the full transaction objects, if false it returns only the hashes of the transactions.
 
-### Returns
+## Parameters
+
+- `HASH`, 32 Bytes - Hash of a block.
+- `Boolean` - If `true` it returns the full transaction objects, if `false` it returns only the hashes of the transactions.
+
+## Returns
 
 - `Object` - A block object with the following fields, or null when no block was found:
   - `number`: QUANTITY - the block number. null when its pending block.
@@ -32,19 +32,23 @@ description: Returns information about a block by hash.
   - `transactions`: Array - Array of transaction objects, or 32 Bytes transaction hashes depending on the last given parameter.
   - `uncles`: Array - Array of uncle hashes.
 
-###
-
-Request
+## **Request example**
 
 ```bash
-curl https://rpc.<REGION>.gateway.fm/v4/ethereum/non-archival/mainnet  \
--X POST \
--H "Authorization: Bearer <YOUR_API_KEY>" \
--H "Content-Type: application/json" \
--d '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xc0f4906fea23cf6f3cce98cb44e8e1449e455b28d684dfa9ff65426495584de6", true],"id":1}'
+curl --location 'https://rpc.eth.gateway.fm' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jsonrpc": "2.0",
+    "method": "eth_getBlockByHash",
+    "params": [
+        "0xc0f4906fea23cf6f3cce98cb44e8e1449e455b28d684dfa9ff65426495584de6",
+        true
+    ],
+    "id": 1
+}'
 ```
 
-Result
+## **Response example**
 
 ```javascript
 {
@@ -72,7 +76,6 @@ Result
             {
                 "blockHash": "0xc0f4906fea23cf6f3cce98cb44e8e1449e455b28d684dfa9ff65426495584de6",
                 "blockNumber": "0x1e8480",
-                "chainId": "0x0",
                 "from": "0x32be343b94f860124dc4fee278fdcbd38c102d88",
                 "gas": "0x51615",
                 "gasPrice": "0x6fc23ac00",
