@@ -4,8 +4,7 @@ description: LUKSO RPC
 
 # LUKSO API
 
-Here you will find link to official Lukso documentation: 
-https://docs.lukso.tech/
+Here you will find link to official [Lukso documentation](https://docs.lukso.tech/): 
 
 Lukso RPC is available in the regions on Gateway:
 
