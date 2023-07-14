@@ -2,7 +2,7 @@
 
 * [Welcome to Gateway](README.md)
 
-## RPC Documentation <a href="#apis" id="apis"></a>
+## RPC API Documentation <a href="#apis" id="apis"></a>
 
 * [Ethereum API](apis/ethereum/README.md)
   * [eth\_blockNumber](apis/ethereum/eth\_blockNumber.md)
@@ -97,3 +97,6 @@
   * [experimental\_tx\_status](apis/near/transactions/experimental\_tx\_status.md)
   * [tx](apis/near/transactions/tx.md)
 * [Lukso API](apis/lukso/README.md)
+
+## Validator API Documentation <a href="#apis" id="apis"></a>
+* [Staking API](validator-api/staking/README.md)
