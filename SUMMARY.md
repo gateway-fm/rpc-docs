@@ -71,6 +71,7 @@
   * [trace\_replayTransaction](gnosis/net\_version-7.md)
   * [trace\_transaction](gnosis/net\_version-8.md)
 * [Lukso API](apis/lukso/README.md)
+* [Soroban API](apis/soroban/README.md)
 
 ## Validator API Documentation <a href="#apis" id="apis"></a>
 * [Staking API](validator-api/staking/README.md)
